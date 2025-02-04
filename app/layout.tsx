@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
   title: "Jetflix",
   description:
-    "Its like netflix but for jets. Don't watch all your favorite jet videos in one place.",
+    "Elevated entertainment experience with cutting-edge streaming technology.",
   openGraph: { images: ["/og.png"] },
 };
 
@@ -31,23 +31,38 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <ClerkProvider
         appearance={{
-          variables: { colorPrimary: "#000000" },
+          variables: { colorPrimary: "#ffffff" },
           elements: {
             formButtonPrimary:
-              "bg-black border border-black border-solid hover:bg-white hover:text-black",
+              "bg-white text-black rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105",
             socialButtonsBlockButton:
-              "bg-white border-gray-200 hover:bg-transparent hover:border-black text-gray-600 hover:text-black",
-            socialButtonsBlockButtonText: "font-semibold",
+              "bg-transparent border border-gray-700 hover:border-white rounded-full text-white hover:bg-white/10 transition-all duration-300",
+            socialButtonsBlockButtonText: "font-medium",
             formButtonReset:
-              "bg-white border border-solid border-gray-200 hover:bg-transparent hover:border-black text-gray-500 hover:text-black",
+              "bg-transparent border border-gray-700 text-white hover:border-white rounded-full transition-colors duration-300",
             membersPageInviteButton:
-              "bg-black border border-black border-solid hover:bg-white hover:text-black",
-            card: "bg-[#fafafa]",
+              "bg-white text-black rounded-full hover:bg-opacity-80 transition-all duration-300",
+            card: "bg-black/30 backdrop-blur-xl border border-white/10 rounded-2xl",
           },
         }}
       >
-        <body className={`min-h-screen flex flex-col antialiased`}>
-          {children}
+        <body className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+          <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent mix-blend-screen pointer-events-none" />
+          
+          <nav className="backdrop-blur-md bg-black/80 border-b border-white/10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+              <div className="flex items-center justify-between">
+                <h1 className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  JETFLIX
+                </h1>
+                {/* Add navigation items here */}
+              </div>
+            </div>
+          </nav>
+
+          <main className="flex-1 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            {children}
+          </main>
         </body>
       </ClerkProvider>
 
