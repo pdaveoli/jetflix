@@ -1,94 +1,61 @@
-import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs"
-import "./home.css"
-import Image from "next/image"
-import Link from "next/link"
-import { Footer } from "./components/footer"
+import { ClerkProvider } from "@clerk/nextjs";
+import "./globals.css";
+import Script from "next/script";
+import { Metadata } from "next";
+import localFont from "next/font/local";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Jetflix",
+  description: "Premium streaming experience reimagined",
+  openGraph: { images: ["/og.png"] },
+};
+
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+});
+
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+});
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <>
-      <main className="netflix-bg">
-        {/* Navigation Bar */}
-        <nav className="nav">
-          <div className="nav__container">
-            <Image
-              src="/netflix-logo.png" // Replace with your Netflix logo path
-              alt="Netflix"
-              width={120}
-              height={40}
-              className="nav__logo"
-            />
-            <div className="nav__actions">
-              <SignedOut>
-                <SignInButton>
-                  <button className="nav__signin">Sign In</button>
-                </SignInButton>
-              </SignedOut>
-              <SignedIn>
-                <Link href="/dashboard" className="nav__dashboard">
-                  Dashboard
-                </Link>
-              </SignedIn>
-            </div>
-          </div>
-        </nav>
-
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero__content">
-            <h1 className="hero__title">
-              Unlimited movies, TV shows, and more
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <ClerkProvider
+        appearance={{
+          variables: { colorPrimary: "#000000" },
+          elements: {
+            formButtonPrimary:
+              "bg-black text-white rounded-lg hover:bg-gray-800 transition-colors shadow-sm",
+            socialButtonsBlockButton:
+              "border-gray-200 hover:border-black text-gray-600 hover:text-black",
+            card: "shadow-lg border border-gray-100",
+          },
+        }}
+      >
+        <body className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+          <div className="fixed inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
+          
+          <main className="container max-w-4xl mx-auto px-4 py-20">
+            <h1 className="text-6xl md:text-7xl font-bold text-center mb-12 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              Jetflix
             </h1>
-            <p className="hero__subtitle">Watch anywhere. Cancel anytime.</p>
-            <p className="hero__description">
-              Ready to watch? Create your membership to get started.
-            </p>
-            <div className="hero__cta">
-              <SignedOut>
-                <SignInButton>
-                  <button className="cta-button">Get Started</button>
-                </SignInButton>
-              </SignedOut>
-              <SignedIn>
-                <Link href="/dashboard" className="cta-button">
-                  Start Watching
-                </Link>
-              </SignedIn>
+            
+            <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-8">
+              {children}
             </div>
-          </div>
-          <div className="hero__overlay" />
-        </section>
+          </main>
+        </body>
+      </ClerkProvider>
 
-        {/* Features Section */}
-        <section className="features">
-          <div className="feature">
-            <div className="feature__text">
-              <h2>Enjoy on your TV</h2>
-              <p>
-                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-                Blu-ray players, and more.
-              </p>
-            </div>
-            <div className="feature__image">
-              {/* Add your TV image here */}
-            </div>
-          </div>
-
-          <div className="feature reverse">
-            <div className="feature__text">
-              <h2>Download your shows to watch offline</h2>
-              <p>
-                Save your favorites easily and always have something to watch.
-              </p>
-            </div>
-            <div className="feature__image">
-              {/* Add your mobile image here */}
-            </div>
-          </div>
-        </section>
-
-        <Footer />
-      </main>
-    </>
-  )
+      <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js" />
+      <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js" />
+    </html>
+  );
 }
