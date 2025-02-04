@@ -6,9 +6,9 @@ import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
-  title: "Next.js Clerk Template",
+  title: "Jetflix",
   description:
-    "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
+    "Its like netflix but for jets. Don't watch all your favorite jet videos in one place.",
   openGraph: { images: ["/og.png"] },
 };
 
