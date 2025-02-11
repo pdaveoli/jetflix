@@ -1,4 +1,4 @@
-import { ClerkProvider, SignInButton } from "@clerk/nextjs";
+import { ClerkProvider, UserButton } from "@clerk/nextjs";
 import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
@@ -56,8 +56,14 @@ export default function RootLayout({
                 <h1 className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                   JETFLIX
                 </h1>
-                {/* Add navigation items here */}
-                <SignInButton />
+                <UserButton
+                  afterSignOutUrl="/"
+                  appearance={{
+                    elements: {
+                      userButtonAvatarBox: "size-10",
+                    },
+                  }}
+                />
               </div>
             </div>
           </nav>
