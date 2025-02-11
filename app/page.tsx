@@ -12,11 +12,7 @@ const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 
 // Updated RootLayout
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Home() {
   return (
     <main className="container max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-16">
