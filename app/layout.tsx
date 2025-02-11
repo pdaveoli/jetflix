@@ -55,7 +55,7 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex items-center justify-between text-white">
                 <Image
-                  src="public/logo.png"
+                  src="/public/logo.png"
                   alt="Picture of the author"
                   // width={500} automatically provided
                   // height={500} automatically provided
