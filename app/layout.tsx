@@ -3,6 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
 import localFont from "next/font/local";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
@@ -63,6 +64,8 @@ export default function RootLayout({
           <main className="flex-1 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {children}
           </main>
+
+          <Footer/>
         </body>
       </ClerkProvider>
 

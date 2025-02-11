@@ -5,7 +5,7 @@ import "./globals.css";
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import { Faq } from "@/components/faq";
-import { Footer } from "@/components/footer";
+
 
 const geistSans = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
