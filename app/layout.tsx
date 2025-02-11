@@ -1,4 +1,4 @@
-import { ClerkProvider, UserButton } from "@clerk/nextjs";
+import { ClerkProvider, SignInButton, UserButton } from "@clerk/nextjs";
 import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
@@ -58,6 +58,7 @@ export default function RootLayout({
                 </h1>
                 <UserButton
                   afterSignOutUrl="/"
+                  fallback={<SignInButton />}
                   appearance={{
                     elements: {
                       userButtonAvatarBox: "size-10",
