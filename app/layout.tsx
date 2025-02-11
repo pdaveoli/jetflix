@@ -52,12 +52,14 @@ export default function RootLayout({
           
           <nav className="backdrop-blur-md bg-black/80 border-b border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between text-white">
                 <h1 className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                   JETFLIX
                 </h1>
                 <OrganizationSwitcher />
-                <SignInButton />
+                <SignInButton 
+                  
+                />
               </div>
             </div>
           </nav>
