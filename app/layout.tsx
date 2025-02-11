@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
@@ -49,10 +50,18 @@ export default function RootLayout({
       >
         <body className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
           <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent mix-blend-screen pointer-events-none" />
-          
+
           <nav className="backdrop-blur-md bg-black/80 border-b border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex items-center justify-between text-white">
+                <Image
+                  src="public/logo.png"
+                  alt="Picture of the author"
+                  // width={500} automatically provided
+                  // height={500} automatically provided
+                  // blurDataURL="data:..." automatically provided
+                  placeholder="blur" // Optional blur-up while loading
+                />
                 <h1 className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                   JETFLIX
                 </h1>
@@ -66,7 +75,7 @@ export default function RootLayout({
             {children}
           </main>
 
-          <Footer/>
+          <Footer />
         </body>
       </ClerkProvider>
 
