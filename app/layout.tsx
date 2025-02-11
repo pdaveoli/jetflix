@@ -1,4 +1,4 @@
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, SignInButton } from "@clerk/nextjs";
 import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
@@ -57,6 +57,7 @@ export default function RootLayout({
                   JETFLIX
                 </h1>
                 {/* Add navigation items here */}
+                <SignInButton />
               </div>
             </div>
           </nav>

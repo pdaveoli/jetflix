@@ -1,8 +1,6 @@
 "use client";
 
-import { ClerkProvider, SignInButton } from "@clerk/nextjs";
 import "./globals.css";
-import Script from "next/script";
 import { Inter } from "next/font/google";
 import { Faq } from "@/components/faq";
 
