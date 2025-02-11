@@ -6,7 +6,14 @@ const nextConfig = {
         hostname: 'img.clerk.com',
         port: '',        
       },],
+      localPatterns: [
+        {
+          pathname: '/public/',
+          search: '',
+        },
+      ],
   },
 };
+
 
 module.exports = nextConfig;
