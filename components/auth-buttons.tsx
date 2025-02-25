@@ -4,16 +4,16 @@ import { SignInButton, SignUpButton, SignedOut } from "@clerk/nextjs";
 
 export function AuthButtons() {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md flex gap-4">
+    <div>
       <SignedOut>
         <SignUpButton>
           <Button className="bg-indigo-600 hover:bg-indigo-700 flex items-center gap-2">
-            <UserPlus size={20} /> Sign Up
+            <UserPlus size={20} />
           </Button>
         </SignUpButton>
         <SignInButton>
           <Button className="bg-indigo-600 hover:bg-indigo-700 flex items-center gap-2">
-            <LogIn size={20} /> Sign In
+            <LogIn size={20} />
           </Button>
         </SignInButton>
       </SignedOut>
