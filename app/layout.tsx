@@ -1,4 +1,11 @@
-import { ClerkProvider, SignInButton, UserButton } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
 import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
@@ -56,17 +63,21 @@ export default function RootLayout({
               <div className="flex items-center justify-between text-white">
                 <Image
                   src="/logo.png"
-                  alt="Picture of the author"
+                  alt="Jetflix"
                   // width={500} automatically provided
                   // height={500} automatically provided
                   // blurDataURL="data:..." automatically provided
                   placeholder="blur" // Optional blur-up while loading
                 />
-                <h1 className="text-2xl font-semibold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  JETFLIX
-                </h1>
-                <UserButton />
-                <SignInButton />
+                <header className="flex justify-end items-center p-4 gap-4 h-16">
+                  <SignedOut>
+                    <SignInButton />
+                    <SignUpButton />
+                  </SignedOut>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
+                </header>
               </div>
             </div>
           </nav>
