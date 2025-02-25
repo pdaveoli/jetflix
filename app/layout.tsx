@@ -1,17 +1,16 @@
 import {
   ClerkProvider,
-  SignInButton,
-  SignUpButton,
   SignedIn,
   SignedOut,
   UserButton,
-} from '@clerk/nextjs'
+} from "@clerk/nextjs";
 import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
+import { AuthButtons } from "@/components/auth-buttons";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
@@ -40,44 +39,43 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <ClerkProvider
         appearance={{
-          variables: { colorPrimary: "#ffffff" },
+          variables: { colorPrimary: "#2563eb" },
           elements: {
             formButtonPrimary:
-              "bg-white text-black rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105",
+              "bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-300 shadow-sm",
             socialButtonsBlockButton:
-              "bg-transparent border border-gray-700 hover:border-white rounded-full text-white hover:bg-white/10 transition-all duration-300",
+              "bg-transparent border border-gray-200 hover:border-indigo-600 rounded-lg text-gray-600 hover:text-indigo-600 hover:bg-gray-50 transition-all duration-300",
             socialButtonsBlockButtonText: "font-medium",
             formButtonReset:
-              "bg-transparent border border-gray-700 text-white hover:border-white rounded-full transition-colors duration-300",
+              "bg-transparent border border-gray-200 text-gray-600 hover:border-indigo-600 hover:text-indigo-600 rounded-lg transition-colors duration-300",
             membersPageInviteButton:
-              "bg-white text-black rounded-full hover:bg-opacity-80 transition-all duration-300",
-            card: "bg-black/30 backdrop-blur-xl border border-white/10 rounded-2xl",
+              "bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-300",
+            card: "bg-white border border-gray-200 rounded-xl shadow-sm",
           },
         }}
       >
-        <body className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-          <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent mix-blend-screen pointer-events-none" />
-
-          <nav className="backdrop-blur-md bg-black/80 border-b border-white/10">
+        <body className="min-h-screen bg-white">
+          <nav className="sticky top-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-              <div className="flex items-center justify-between text-white">
-                <Image
-                  src="/logo.png"
-                  alt="Jetflix"
-                  // width={500} automatically provided
-                  // height={500} automatically provided
-                  // blurDataURL="data:..." automatically provided
-                  placeholder="blur" // Optional blur-up while loading
-                />
-                <header className="flex justify-end items-center p-4 gap-4 h-16">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-4">
+                  <Image
+                    src="/logo.png"
+                    alt="Jetflix"
+                    width={40}
+                    height={40}
+                    className="h-10 w-10"
+                  />
+                  <span className="text-xl font-bold text-gray-900">Jetflix</span>
+                </div>
+                <div className="flex items-center gap-4">
                   <SignedOut>
-                    <SignInButton />
-                    <SignUpButton />
+                    <AuthButtons />
                   </SignedOut>
                   <SignedIn>
-                    <UserButton />
+                    <UserButton afterSignOutUrl="/" />
                   </SignedIn>
-                </header>
+                </div>
               </div>
             </div>
           </nav>
