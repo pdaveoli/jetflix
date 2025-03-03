@@ -4,11 +4,19 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Faq } from "@/components/faq";
 import { Button } from "@/components/ui/button";
+import { SignUpButton } from "@clerk/nextjs";
 
 const geistSans = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export default function Home() {
+  const handleExploreFeaturesClick = () => {
+    const featuresSection = document.getElementById("features-section");
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
       <section className="py-24 text-center bg-white">
@@ -24,10 +32,17 @@ export default function Home() {
                 and cutting-edge technology.
               </p>
               <div className="flex justify-center gap-4">
-                <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
-                  Start Free Trial
-                </Button>
-                <Button size="lg" variant="outline" className="text-gray-600">
+                <SignUpButton>
+                  <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+                    Start Free Trial
+                  </Button>
+                </SignUpButton>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-gray-600"
+                  onClick={handleExploreFeaturesClick}
+                >
                   Explore Features
                 </Button>
               </div>
@@ -37,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Feature Section */}
-      <section className="py-20 bg-white">
+      <section id="features-section" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {['4K Streaming', 'AI Recommendations', 'Offline Viewing'].map((feature) => (

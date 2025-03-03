@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ClerkProvider,
   SignedIn,
@@ -11,24 +13,11 @@ import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
 import Image from "next/image";
 import { AuthButtons } from "@/components/auth-buttons";
+import { Inter } from "next/font/google";
+import { metadata } from "./metadata";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://clerk-next-app.vercel.app/"),
-  title: "Jetflix",
-  description:
-    "Elevated entertainment experience with cutting-edge streaming technology.",
-  openGraph: { images: ["/og.png"] },
-};
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-});
+const geistSans = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
+const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export default function RootLayout({
   children,
@@ -36,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-screen`}>
       <ClerkProvider
         appearance={{
           variables: { colorPrimary: "#2563eb" },
@@ -54,7 +43,7 @@ export default function RootLayout({
           },
         }}
       >
-        <body className="min-h-screen bg-white">
+        <body className="h-screen bg-white">
           <nav className="sticky top-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex items-center justify-between">
@@ -80,7 +69,7 @@ export default function RootLayout({
             </div>
           </nav>
 
-          <main className="flex-1 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <main className="flex-1 w-full h-full">
             {children}
           </main>
 

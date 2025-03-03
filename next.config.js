@@ -1,19 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [ {
+    remotePatterns: [
+      {
         protocol: 'https',
         hostname: 'img.clerk.com',
-        port: '',        
-      },],
-      localPatterns: [
-        {
-          pathname: '/public/',
-          search: '',
-        },
-      ],
+        port: '',
+      },
+    ],
   },
 };
-
 
 module.exports = nextConfig;
