@@ -11,7 +11,7 @@ const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      <section className="py-24 text-center bg-gradient-to-b from-white to-gray-50">
+      <section className="py-24 text-center bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-blue-600 bg-clip-text text-transparent">
@@ -50,16 +50,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              Find answers to common questions about our streaming service.
-            </p>
-          </div>
           <Faq />
         </div>
       </section>
