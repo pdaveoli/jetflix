@@ -1,12 +1,12 @@
-import { TMDB } from 'tmdb-ts';
-import db from '@/lib/firestore';
-import { collection, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from 'firebase/firestore';
+/* import { TMDB } from 'tmdb-ts';
+/* import db from '@/lib/firestore'; */
+/* import { collection, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from 'firebase/firestore';
 import { currentUser } from '@clerk/nextjs/server';
 
-const tmdb = new TMDB('095d10d1bdc8d14ed4bc2ccb2447710b');
+const tmdb = new TMDB('095d10d1bdc8d14ed4bc2ccb2447710b'); */
 
 // Function to sign up the user to the Firestore database
-export async function signUpUser() {
+/* export async function signUpUser() {
   try {
     const user = await currentUser();
     if (!user) return;
@@ -20,9 +20,9 @@ export async function signUpUser() {
   } catch (error) {
     console.error('Error signing up user:', error);
   }
-}
+} */
 
-// Function to add a liked movie to the user's document
+/* // Function to add a liked movie to the user's document
 export async function addLikedMovie(movieId: string) {
   try {
     const user = await currentUser();
@@ -80,4 +80,4 @@ async function removeDislikedMovie(movieId: string) {
   } catch (error) {
     console.error('Error removing disliked movie:', error);
   }
-}
+} */
