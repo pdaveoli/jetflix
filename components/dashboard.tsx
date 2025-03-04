@@ -2,13 +2,16 @@
 
 import { useState } from "react";
 import { FaHome, FaFilm, FaTv, FaDownload, FaCog, FaThumbsUp, FaThumbsDown } from "react-icons/fa";
-import { getMovies } from "@/app/actions";
+
+interface DashboardProps {
+  films: Array<{ id: number; title: string; poster_path: string }>;
+}
 
 
-export default async function Dashboard() {
+export default async function Dashboard({ films} : DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
 
-  const films = (await getMovies()).results;
+  
 
   return (
     <div className="flex h-screen w-full bg-gray-100">
