@@ -8,8 +8,11 @@ export default async function DashboardPage({
   params: {};
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
+  // Await searchParams before accessing its properties
+  const { page } = await searchParams;
+  
   // Get the page number from URL or default to 1
-  const pageParam = searchParams.page as string | undefined;
+  const pageParam = page as string | undefined;
   const pageNumber = pageParam ? parseInt(pageParam, 10) : 1;
   
   // Fetch movies directly using the server action
