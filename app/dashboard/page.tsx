@@ -1,23 +1,20 @@
 import Dashboard from "@/components/dashboard";
-import { fetchMovies } from "./getMovies";
-import { GetServerSideProps } from "next";
+import { getMovies } from "@/app/actions";
 
-interface DashboardPageProps {
-  films: Array<{ id: number; title: string; poster_path: string }>;
-}
+// In App Router, page components automatically receive searchParams
+export default async function DashboardPage({
+  searchParams
+}: {
+  searchParams: { page?: string }
+}) {
+  // Get the page number from URL or default to 1
+  const pageNumber = searchParams.page ? parseInt(searchParams.page) : 1;
+  
+  // Fetch movies directly using the server action
+  const moviesData = await getMovies(pageNumber);
+  
+  // Extract the results to pass to the Dashboard component
+  const films = moviesData.results;
 
-export default function DashboardPage({ films }: DashboardPageProps) {
   return <Dashboard films={films} />;
 }
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { query } = context;
-  const pageNumber = query.page ? parseInt(query.page as string) : 0;
-  const films = await fetchMovies(pageNumber);
-
-  return {
-    props: {
-      films,
-    },
-  };
-};
