@@ -1,11 +1,23 @@
 import Dashboard from "@/components/dashboard";
 import { fetchMovies } from "./getMovies";
-import { useSearchParams } from 'next/navigation'
+import { GetServerSideProps } from "next";
 
-export default async function DashboardPage() {
-  const searchParams = useSearchParams();
-  const pageNumber = searchParams.get('page') ? parseInt(searchParams.get('page') as string) : 0;
-  const films = await fetchMovies(pageNumber);
+interface DashboardPageProps {
+  films: Array<{ id: number; title: string; poster_path: string }>;
+}
 
+export default function DashboardPage({ films }: DashboardPageProps) {
   return <Dashboard films={films} />;
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { query } = context;
+  const pageNumber = query.page ? parseInt(query.page as string) : 0;
+  const films = await fetchMovies(pageNumber);
+
+  return {
+    props: {
+      films,
+    },
+  };
+};
