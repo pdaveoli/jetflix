@@ -1,14 +1,18 @@
 import Dashboard from "@/components/dashboard";
 import { getMovies } from "@/app/actions";
 
-// In App Router, page components automatically receive searchParams
+// Define correct types for Next.js App Router page props
+interface PageProps {
+  params: { slug?: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
 export default async function DashboardPage({
   searchParams
-}: {
-  searchParams: { page?: string }
-}) {
+}: PageProps) {
   // Get the page number from URL or default to 1
-  const pageNumber = searchParams.page ? parseInt(searchParams.page) : 1;
+  const pageParam = searchParams.page as string | undefined;
+  const pageNumber = pageParam ? parseInt(pageParam, 10) : 1;
   
   // Fetch movies directly using the server action
   const moviesData = await getMovies(pageNumber);
