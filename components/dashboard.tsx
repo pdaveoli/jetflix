@@ -8,7 +8,7 @@ interface DashboardProps {
 }
 
 
-export default async function Dashboard({ films} : DashboardProps) {
+export default function Dashboard({ films} : DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
 
     
