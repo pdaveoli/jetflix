@@ -1,9 +1,17 @@
 import { TMDB } from 'tmdb-ts';
+
+
 /* import db from '@/lib/firestore'; */
 /* import { collection, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from 'firebase/firestore';
 import { currentUser } from '@clerk/nextjs/server';
+*/
+const tmdb = new TMDB('095d10d1bdc8d14ed4bc2ccb2447710b'); 
 
-const tmdb = new TMDB('095d10d1bdc8d14ed4bc2ccb2447710b'); */
+export async function getMovies() {
+  const movies = await tmdb.trending.trending("movie", "week");
+  return movies;
+}
+
 
 // Function to sign up the user to the Firestore database
  export async function signUpUser() {
