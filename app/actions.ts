@@ -7,8 +7,8 @@ import { currentUser } from '@clerk/nextjs/server';
 */
 const tmdb = new TMDB('eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMTY3MDFjYzVlMmNiOTk3MDk1MTc2NzdlNWM3YjljZCIsIm5iZiI6MTczODg2NTgwMi42NzIsInN1YiI6IjY3YTRmYzhhZjE5NmE3M2FlNzY2ZjJkZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Rqg9Hs02YOffcPuTOmCbfHgnz0uf4wsDsin1fwQj7sA'); 
 
-export async function getMovies() {
-  const movies = await tmdb.trending.trending("movie", "week");
+export async function getMovies(pageNumber: number) {
+  const movies = await tmdb.trending.trending("movie", "week", {page: pageNumber});
   return movies;
 }
 
