@@ -5,7 +5,7 @@ import { TMDB } from 'tmdb-ts';
 /* import { collection, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from 'firebase/firestore';
 import { currentUser } from '@clerk/nextjs/server';
 */
-const tmdb = new TMDB('095d10d1bdc8d14ed4bc2ccb2447710b'); 
+const tmdb = new TMDB('eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMTY3MDFjYzVlMmNiOTk3MDk1MTc2NzdlNWM3YjljZCIsIm5iZiI6MTczODg2NTgwMi42NzIsInN1YiI6IjY3YTRmYzhhZjE5NmE3M2FlNzY2ZjJkZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Rqg9Hs02YOffcPuTOmCbfHgnz0uf4wsDsin1fwQj7sA'); 
 
 export async function getMovies() {
   const movies = await tmdb.trending.trending("movie", "week");
