@@ -2,56 +2,25 @@
 
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
-import { useState } from "react";
 
 import { cn } from "@/lib/utils"
 
-interface DrawerProps {
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-  children: React.ReactNode;
-}
+const Drawer = ({
+  shouldScaleBackground = true,
+  ...props
+}: React.ComponentProps<typeof DrawerPrimitive.Root>) => (
+  <DrawerPrimitive.Root
+    shouldScaleBackground={shouldScaleBackground}
+    {...props}
+  />
+)
+Drawer.displayName = "Drawer"
 
-export function Drawer({ open, onOpenChange, children }: DrawerProps) {
-  return (
-    <div className={`fixed inset-0 z-50 ${open ? "block" : "hidden"}`}>
-      <div className="fixed inset-0 bg-black opacity-50" onClick={() => onOpenChange(false)}></div>
-      <div className="fixed inset-y-0 right-0 w-80 bg-white shadow-lg">
-        {children}
-      </div>
-    </div>
-  );
-}
-
-export function DrawerTrigger({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
-}
-
-export function DrawerContent({ children }: { children: React.ReactNode }) {
-  return <div className="p-4">{children}</div>;
-}
-
-export function DrawerHeader({ children }: { children: React.ReactNode }) {
-  return <div className="p-4 border-b">{children}</div>;
-}
-
-export function DrawerTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-xl font-semibold">{children}</h2>;
-}
-
-export function DrawerDescription({ children }: { children: React.ReactNode }) {
-  return <p className="text-sm text-gray-600">{children}</p>;
-}
-
-export function DrawerFooter({ children }: { children: React.ReactNode }) {
-  return <div className="p-4 border-t">{children}</div>;
-}
-
-export function DrawerClose({ children }: { children: React.ReactNode }) {
-  return <button onClick={() => onOpenChange(false)}>{children}</button>;
-}
+const DrawerTrigger = DrawerPrimitive.Trigger
 
 const DrawerPortal = DrawerPrimitive.Portal
+
+const DrawerClose = DrawerPrimitive.Close
 
 const DrawerOverlay = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Overlay>,
