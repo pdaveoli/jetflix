@@ -85,7 +85,7 @@ export default function Dashboard({ films }: DashboardProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {films.map((film) => (
                 <Drawer key={film.id} open={openDrawerId === film.id} onOpenChange={() => setOpenDrawerId(null)}>
-                  <DrawerTrigger asChild>
+                  <DrawerTrigger>
                     <div 
                       className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer"
                       onClick={() => handleCardClick(film.id)}
@@ -122,7 +122,7 @@ export default function Dashboard({ films }: DashboardProps) {
                         />
                       </div>
                       <DrawerFooter>
-                        <DrawerClose>
+                        <DrawerClose onOpenChange={(open) => setOpenDrawerId(open ? film.id : null)}>
                           <button className="w-full bg-indigo-600 text-white py-2 rounded-md">
                             Close
                           </button>
