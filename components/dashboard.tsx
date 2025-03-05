@@ -93,7 +93,7 @@ export default function Dashboard({ films }: DashboardProps) {
                       <img 
                         src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path} 
                         alt={film.title} 
-                        className="w-full h-80 object-cover" 
+                        className="w-300 h-450 object-cover" 
                       />
                       <div className="p-4">
                         <h3 className="text-lg font-semibold">{film.title}</h3>

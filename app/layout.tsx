@@ -49,7 +49,7 @@ export default function RootLayout({
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
                   <Image
-                    src="/logo.png"
+                    src={"@/public/logo.png"}
                     alt="Jetflix"
                     width={40}
                     height={40}
