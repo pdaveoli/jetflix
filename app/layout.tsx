@@ -10,7 +10,6 @@ import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
 import localFont from "next/font/local";
-import { Footer } from "@/components/footer";
 import Image from "next/image";
 import { AuthButtons } from "@/components/auth-buttons";
 import { Inter } from "next/font/google";
@@ -72,8 +71,6 @@ export default function RootLayout({
           <main className="flex-1 w-full h-full">
             {children}
           </main>
-
-          <Footer />
         </body>
       </ClerkProvider>
 

@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { Faq } from "@/components/faq";
 import { Button } from "@/components/ui/button";
 import { SignUpButton } from "@clerk/nextjs";
+import { Footer } from "@/components/footer";
 
 const geistSans = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
@@ -70,6 +71,7 @@ export default function Home() {
           <Faq />
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
