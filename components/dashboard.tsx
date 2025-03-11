@@ -137,13 +137,18 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                   <DrawerContent>
                     <DrawerHeader>
                       <DrawerTitle>{film.title}</DrawerTitle>
-                      <DrawerDescription>More details about this film</DrawerDescription>
+                      <DrawerDescription>
+                        More details about this film
+                      </DrawerDescription>
                     </DrawerHeader>
                     <div className="p-4 flex justify-center">
-                      <img 
-                        src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path}
+                      <img
+                        src={
+                          "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
+                          film.poster_path
+                        }
                         alt={film.title}
-                        className="w-48 rounded-md" 
+                        className="w-48 rounded-md"
                       />
                     </div>
                   </DrawerContent>
@@ -158,31 +163,61 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
         </main>
 
         {/* Pagination */}
-
-        <Pagination>
-          <PaginationContent>
-            <PaginationItem>
-              <PaginationPrevious href="#" />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href={"?page=" + pageNumber} isActive>
-                2
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationEllipsis />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationNext href="#" />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
+        {pageNumber === 1 ? (
+          <Pagination>
+            <PaginationContent>
+              <PaginationItem>
+                <PaginationPrevious href="#" />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href={"?page=" + pageNumber} isActive>1</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                  {pageNumber + 1}
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href={"?page=" + (pageNumber + 2)}>
+                  {pageNumber + 2}
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationEllipsis />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationNext href={"?page=" + (pageNumber + 1)} />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
+        ) : (
+          <Pagination>
+            <PaginationContent>
+              <PaginationItem>
+                <PaginationPrevious href={"?page=" + (pageNumber-1)} />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href="?">1</PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href={"?page=" + pageNumber} isActive>
+                  {pageNumber + 1}
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationLink href={"?page=" + (pageNumber + 2)}>
+                  {pageNumber + 2}
+                </PaginationLink>
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationEllipsis />
+              </PaginationItem>
+              <PaginationItem>
+                <PaginationNext href={"?page=" + (pageNumber + 1)} />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
+        )}
       </div>
     </div>
   );
