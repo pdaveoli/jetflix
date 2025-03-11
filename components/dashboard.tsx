@@ -255,9 +255,8 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
           {activeTab === "series" && <div>Series Content</div>}
           {activeTab === "downloads" && <div>Downloads Content</div>}
           {activeTab === "settings" && <div>Settings Content</div>}
-        </main>
-
-        {/* Pagination */}
+        
+          {/* Pagination */}
         {pageNumber === 1 ? (
           <Pagination>
             <PaginationContent>
@@ -294,7 +293,9 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                 <PaginationPrevious href={"?page=" + (pageNumber - 1)} />
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href={"?page=" + (pageNumber-1)}>1</PaginationLink>
+                <PaginationLink href={"?page=" + (pageNumber-1)}>
+                  {pageNumber - 1}
+                </PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink href={"?page=" + pageNumber} isActive>
@@ -315,6 +316,9 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
             </PaginationContent>
           </Pagination>
         )}
+        </main>
+
+        
       </div>
     </div>
   );
