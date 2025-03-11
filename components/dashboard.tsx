@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { FaHome, FaFilm, FaTv, FaDownload, FaCog, FaThumbsUp, FaThumbsDown, FaPlay, FaStar, FaPlus, FaTimes } from "react-icons/fa";
-import { SiNetflix, SiAmazonprime, SiHulu, SiHbo } from "react-icons/si";
 import {
   FaHome,
   FaFilm,
