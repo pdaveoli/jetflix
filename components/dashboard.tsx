@@ -12,6 +12,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { Button } from "./ui/button";
 
 interface DashboardProps {
   films: Array<{ id: number; title: string; poster_path: string }>;
@@ -98,12 +99,12 @@ export default function Dashboard({ films }: DashboardProps) {
                       <div className="p-4">
                         <h3 className="text-lg font-semibold">{film.title}</h3>
                         <div className="flex justify-between mt-2" onClick={handleLikeClick}>
-                          <button className="text-green-500 hover:text-green-700">
+                          <Button className="text-green-500 hover:text-green-700">
                             <FaThumbsUp size={20} />
-                          </button>
-                          <button className="text-red-500 hover:text-red-700">
+                          </Button>
+                          <Button className="text-red-500 hover:text-red-700">
                             <FaThumbsDown size={20} />
-                          </button>
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -122,10 +123,10 @@ export default function Dashboard({ films }: DashboardProps) {
                         />
                       </div>
                       <DrawerFooter>
-                        <DrawerClose onOpenChange={(open) => setOpenDrawerId(open ? film.id : null)}>
-                          <button className="w-full bg-indigo-600 text-white py-2 rounded-md">
+                        <DrawerClose asChild>
+                          <Button className="w-full bg-indigo-600 text-white py-2 rounded-md">
                             Close
-                          </button>
+                          </Button>
                         </DrawerClose>
                       </DrawerFooter>
                     </div>
