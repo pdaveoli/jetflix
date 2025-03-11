@@ -36,6 +36,22 @@ import {
 } from "@/components/ui/pagination";
 import { Button } from "./ui/button";
 
+const abbreviateNumber = (num: number): string => {
+  if (num >= 1000000) {
+    return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+  }
+  if (num >= 1000) {
+    return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+  }
+  return (num.toFixed(1)).toString();
+};
+
+// Helper function to extract year from date string
+const getYearFromDate = (dateStr: string): string => {
+  return dateStr.substring(0, 4);
+};
+
+
 interface DashboardProps {
   films: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
   pageNumber: number;
@@ -174,17 +190,17 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                             {film.title}
                           </DrawerTitle>
                           <DrawerDescription className="text-gray-500">
-                            {film.release_date} • Action, Adventure • 2h 15m
+                            {getYearFromDate(film.release_date)} • Action, Adventure • 2h 15m
                           </DrawerDescription>
 
                           {/* Rating */}
                           <div className="flex items-center mt-4">
                             <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
                               <FaStar className="text-yellow-500 mr-1" />
-                              <span className="font-semibold">{film.vote_average}/10</span>
+                              <span className="font-semibold">{abbreviateNumber(film.vote_average)}/10</span>
                             </div>
                             <span className="ml-2 text-sm text-gray-500">
-                              ({film.vote_count} reviews)
+                              ({abbreviateNumber(film.vote_count)} reviews)
                             </span>
                           </div>
                         </DrawerHeader>
