@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react";
-import { FaHome, FaFilm, FaTv, FaDownload, FaCog, FaThumbsUp, FaThumbsDown } from "react-icons/fa";
+import { FaHome, FaFilm, FaTv, FaDownload, FaCog, FaThumbsUp, FaThumbsDown, FaPlay, FaStar, FaPlus, FaTimes } from "react-icons/fa";
+import { SiNetflix, SiAmazonprime, SiHulu, SiHbo } from "react-icons/si";
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -101,26 +101,79 @@ export default function Dashboard({ films }: DashboardProps) {
                       </div>
                     </div>
                   </DrawerTrigger>
-                  <DrawerContent>
-                    <DrawerHeader>
-                      <DrawerTitle>{film.title}</DrawerTitle>
-                      <DrawerDescription>More details about this film</DrawerDescription>
-                    </DrawerHeader>
-                    <div className="p-4 flex justify-center">
-                      <img 
-                        src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path}
-                        alt={film.title}
-                        className="w-48 rounded-md" 
-                      />
+                  <DrawerContent className="h-[80vh] max-h-[80vh] p-0">
+                    <div className="flex h-full">
+                      {/* Left side - Full height image */}
+                      <div className="h-full w-1/3 flex-shrink-0">
+                        <img 
+                          src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path}
+                          alt={film.title}
+                          className="h-full w-full object-cover" 
+                        />
+                      </div>
+                      
+                      {/* Right side - Content */}
+                      <div className="flex-1 p-6 relative">
+                        {/* Close button in top right */}
+                        <DrawerClose className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100">
+                          <FaTimes size={20} />
+                        </DrawerClose>
+                        
+                        <DrawerHeader className="p-0 mb-6">
+                          <DrawerTitle className="text-2xl font-bold">{film.title}</DrawerTitle>
+                          <DrawerDescription className="text-gray-500">
+                            2023 • Action, Adventure • 2h 15m
+                          </DrawerDescription>
+                          
+                          {/* Rating */}
+                          <div className="flex items-center mt-4">
+                            <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
+                              <FaStar className="text-yellow-500 mr-1" />
+                              <span className="font-semibold">8.5/10</span>
+                            </div>
+                            <span className="ml-2 text-sm text-gray-500">(2.5k reviews)</span>
+                          </div>
+                        </DrawerHeader>
+                        
+                        {/* Description */}
+                        <div className="mb-6">
+                          <h3 className="font-semibold mb-2">Overview</h3>
+                          <p className="text-gray-700">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                          </p>
+                        </div>
+                        
+                        {/* Watch Providers */}
+                        <div className="mb-6">
+                          <h3 className="font-semibold mb-3">Available on</h3>
+                          <div className="flex space-x-4">
+                            <div className="p-3 bg-gray-100 rounded-lg hover:bg-gray-200 cursor-pointer">
+                              <SiNetflix size={24} className="text-red-600" />
+                            </div>
+                            <div className="p-3 bg-gray-100 rounded-lg hover:bg-gray-200 cursor-pointer">
+                              <SiAmazonprime size={24} className="text-blue-500" />
+                            </div>
+                            <div className="p-3 bg-gray-100 rounded-lg hover:bg-gray-200 cursor-pointer">
+                              <SiHulu size={24} className="text-green-500" />
+                            </div>
+                            <div className="p-3 bg-gray-100 rounded-lg hover:bg-gray-200 cursor-pointer">
+                              <SiHbo size={24} className="text-purple-600" />
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Action Buttons */}
+                        <div className="flex space-x-4 mt-8">
+                          <Button className="flex-1 bg-indigo-600 text-white py-6 rounded-xl hover:bg-indigo-700">
+                            <FaPlay className="mr-2" /> Watch Now
+                          </Button>
+                          <Button className="bg-gray-200 text-gray-800 py-6 px-6 rounded-xl hover:bg-gray-300">
+                            <FaPlus size={20} />
+                          </Button>
+                        </div>
+                      </div>
                     </div>
-                    <DrawerFooter>
-                      <Button className="bg-indigo-600 text-white py-2 rounded-md">
-                        Watch Now
-                      </Button>
-                      <DrawerClose>
-                        <Button variant="outline">Close</Button>
-                      </DrawerClose>
-                    </DrawerFooter>
                   </DrawerContent>
                 </Drawer>
               ))}
