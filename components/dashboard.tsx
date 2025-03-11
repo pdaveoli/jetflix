@@ -14,7 +14,7 @@ import {
   FaPlus,
   FaTimes,
 } from "react-icons/fa";
-import { SiNetflix, SiAmazonprime, SiHulu, SiHbo } from "react-icons/si";
+import { SiNetflix, SiAmazonprime, SiHbo } from "react-icons/si";
 import {
   Drawer,
   DrawerClose,
@@ -220,13 +220,6 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                                 size={24}
                                 className="text-blue-500"
                               />
-                            </Button>
-                            <Button
-                              variant="outline"
-                              className="p-2 h-auto"
-                              aria-label="Hulu"
-                            >
-                              <SiHulu size={24} className="text-green-500" />
                             </Button>
                             <Button
                               variant="outline"
