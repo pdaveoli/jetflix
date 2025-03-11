@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { FaHome, FaFilm, FaTv, FaDownload, FaCog, FaThumbsUp, FaThumbsDown, FaPlay, FaStar, FaPlus, FaTimes } from "react-icons/fa";
+import { SiNetflix, SiAmazonprime, SiHulu, SiHbo } from "react-icons/si";
 import {
   FaHome,
   FaFilm,
@@ -15,7 +17,6 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -138,28 +139,15 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                   <DrawerContent>
                     <DrawerHeader>
                       <DrawerTitle>{film.title}</DrawerTitle>
-                      <DrawerDescription>
-                        More details about this film
-                      </DrawerDescription>
+                      <DrawerDescription>More details about this film</DrawerDescription>
                     </DrawerHeader>
                     <div className="p-4 flex justify-center">
-                      <img
-                        src={
-                          "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
-                          film.poster_path
-                        }
+                      <img 
+                        src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path}
                         alt={film.title}
-                        className="w-48 rounded-md"
+                        className="w-48 rounded-md" 
                       />
                     </div>
-                    <DrawerFooter>
-                      <Button className="bg-indigo-600 text-white py-2 rounded-md">
-                        Watch Now
-                      </Button>
-                      <DrawerClose>
-                        <Button variant="outline">Close</Button>
-                      </DrawerClose>
-                    </DrawerFooter>
                   </DrawerContent>
                 </Drawer>
               ))}
