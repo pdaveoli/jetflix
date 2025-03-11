@@ -20,11 +20,6 @@ interface DashboardProps {
 
 export default function Dashboard({ films }: DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
-  const [openDrawerId, setOpenDrawerId] = useState<number | null>(null);
-  
-  const handleCardClick = (filmId: number) => {
-    setOpenDrawerId(filmId);
-  };
   
   const handleLikeClick = (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent drawer from opening
@@ -85,12 +80,9 @@ export default function Dashboard({ films }: DashboardProps) {
           {activeTab === "films" && (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {films.map((film) => (
-                <Drawer key={film.id} open={openDrawerId === film.id} onOpenChange={() => setOpenDrawerId(null)}>
-                  <DrawerTrigger>
-                    <div 
-                      className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer"
-                      onClick={() => handleCardClick(film.id)}
-                    >
+                <Drawer key={film.id}>
+                  <DrawerTrigger asChild>
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
                       <img 
                         src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path} 
                         alt={film.title} 
@@ -110,26 +102,25 @@ export default function Dashboard({ films }: DashboardProps) {
                     </div>
                   </DrawerTrigger>
                   <DrawerContent>
-                    <div className="mx-auto w-full max-w-sm">
-                      <DrawerHeader>
-                        <DrawerTitle>{film.title}</DrawerTitle>
-                        <DrawerDescription>More details about this film</DrawerDescription>
-                      </DrawerHeader>
-                      <div className="p-4 flex justify-center">
-                        <img 
-                          src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path}
-                          alt={film.title}
-                          className="w-48 rounded-md" 
-                        />
-                      </div>
-                      <DrawerFooter>
-                        <DrawerClose asChild>
-                          <Button className="w-full bg-indigo-600 text-white py-2 rounded-md">
-                            Close
-                          </Button>
-                        </DrawerClose>
-                      </DrawerFooter>
+                    <DrawerHeader>
+                      <DrawerTitle>{film.title}</DrawerTitle>
+                      <DrawerDescription>More details about this film</DrawerDescription>
+                    </DrawerHeader>
+                    <div className="p-4 flex justify-center">
+                      <img 
+                        src={"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path}
+                        alt={film.title}
+                        className="w-48 rounded-md" 
+                      />
                     </div>
+                    <DrawerFooter>
+                      <Button className="bg-indigo-600 text-white py-2 rounded-md">
+                        Watch Now
+                      </Button>
+                      <DrawerClose>
+                        <Button variant="outline">Close</Button>
+                      </DrawerClose>
+                    </DrawerFooter>
                   </DrawerContent>
                 </Drawer>
               ))}
