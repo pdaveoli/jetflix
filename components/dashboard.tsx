@@ -37,7 +37,7 @@ import {
 import { Button } from "./ui/button";
 
 interface DashboardProps {
-  films: Array<{ id: number; title: string; poster_path: string }>;
+  films: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
   pageNumber: number;
 }
 
@@ -174,17 +174,17 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                             {film.title}
                           </DrawerTitle>
                           <DrawerDescription className="text-gray-500">
-                            2023 • Action, Adventure • 2h 15m
+                            {film.release_date} • Action, Adventure • 2h 15m
                           </DrawerDescription>
 
                           {/* Rating */}
                           <div className="flex items-center mt-4">
                             <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
                               <FaStar className="text-yellow-500 mr-1" />
-                              <span className="font-semibold">8.5/10</span>
+                              <span className="font-semibold">{film.vote_average}/10</span>
                             </div>
                             <span className="ml-2 text-sm text-gray-500">
-                              (2.5k reviews)
+                              ({film.vote_count} reviews)
                             </span>
                           </div>
                         </DrawerHeader>
@@ -193,10 +193,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                         <div className="mb-6">
                           <h3 className="font-semibold mb-2">Overview</h3>
                           <p className="text-gray-700">
-                            A thrilling adventure that takes viewers on an
-                            unforgettable journey through uncharted territories.
-                            This film explores themes of courage, friendship, and
-                            discovery.
+                            {film.overview}
                           </p>
                         </div>
 
