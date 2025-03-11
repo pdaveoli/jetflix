@@ -19,5 +19,5 @@ export default async function DashboardPage({
   // Extract the results to pass to the Dashboard component
   const films = moviesData.results;
 
-  return <Dashboard films={films} />;
+  return <Dashboard films={films} pageNumber={pageNumber} />;
 }
