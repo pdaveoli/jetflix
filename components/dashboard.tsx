@@ -197,16 +197,16 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                 <PaginationPrevious href={"?page=" + (pageNumber-1)} />
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="?">1</PaginationLink>
+                <PaginationLink href={"?page=" + (pageNumber-1)}>1</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationLink href={"?page=" + pageNumber} isActive>
-                  {pageNumber + 1}
+                  {pageNumber}
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href={"?page=" + (pageNumber + 2)}>
-                  {pageNumber + 2}
+                <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                  {pageNumber + 1}
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
