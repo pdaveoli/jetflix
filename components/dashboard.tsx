@@ -150,7 +150,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                   <DrawerContent className="p-0">
                     <div className="flex h-[80vh]">
                       {/* Left side - Full height image */}
-                      <div className="h-full w-1/3 flex items-center justify-center bg-gray-900">
+                      <div className="h-full w-1/3 flex items-center justify-center bg-white">
                         <img
                           src={
                             "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
@@ -201,7 +201,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                         </div>
 
                         {/* Watch Providers */}
-                        <div className="mb-6">
+                        <div className="mb-3">
                           <h3 className="font-semibold mb-3">Available on</h3>
                           <div className="flex space-x-4">
                             <Button
@@ -232,7 +232,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                         </div>
 
                         {/* Action Buttons */}
-                        <div className="flex space-x-4 mt-8">
+                        <div className="flex space-x-4 mt-4 mb-6">
                           <Button className="bg-indigo-600 hover:bg-indigo-700 max-w-xs mx-auto">
                             <FaPlay className="mr-2" /> Watch Now
                           </Button>
