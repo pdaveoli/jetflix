@@ -150,14 +150,14 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                   <DrawerContent className="p-0">
                     <div className="flex h-[80vh]">
                       {/* Left side - Full height image */}
-                      <div className="h-full w-1/3">
+                      <div className="h-full w-1/3 flex items-center justify-center bg-gray-900">
                         <img
                           src={
                             "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
                             film.poster_path
                           }
                           alt={film.title}
-                          className="h-full w-full object-cover"
+                          className="h-full object-contain max-w-full"
                         />
                       </div>
 
@@ -233,7 +233,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
 
                         {/* Action Buttons */}
                         <div className="flex space-x-4 mt-8">
-                          <Button className="flex-1 bg-indigo-600 hover:bg-indigo-700">
+                          <Button className="bg-indigo-600 hover:bg-indigo-700 max-w-xs mx-auto">
                             <FaPlay className="mr-2" /> Watch Now
                           </Button>
                           <Button
