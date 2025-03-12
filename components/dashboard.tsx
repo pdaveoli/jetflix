@@ -347,10 +347,10 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                           <div className="flex items-center mt-4">
                             <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
                               <FaStar className="text-yellow-500 mr-1" />
-                              <span className="font-semibold">{abbreviateNumber(film.vote_average)}/10</span>
+                              <span className="font-semibold">{abbreviateNumber(film.vote_average, true)}/10</span>
                             </div>
                             <span className="ml-2 text-sm text-gray-500">
-                              ({abbreviateNumber(film.vote_count)} reviews)
+                              ({abbreviateNumber(film.vote_count, false)} reviews)
                             </span>
                           </div>
                         </DrawerHeader>
