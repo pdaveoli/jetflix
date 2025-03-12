@@ -6,7 +6,7 @@ import {
   FaHome,
   FaFilm,
   FaTv,
-  FaDownload,
+  FaSearch,
   FaCog,
   FaThumbsUp,
   FaThumbsDown,
@@ -61,6 +61,7 @@ interface DashboardProps {
 
 export default function Dashboard({ films, pageNumber }: DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleLikeClick = (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent drawer from opening
@@ -337,7 +338,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
 
                         <DrawerHeader className="p-0 mb-6">
                           <DrawerTitle className="text-2xl font-bold">
-                            {film.title} Series
+                            {film.title}
                           </DrawerTitle>
                           <DrawerDescription className="text-gray-500">
                             {getYearFromDate(film.release_date)} • Drama, Adventure • 3 Seasons
@@ -411,6 +412,34 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
           </>
         );
 
+      case "search":
+        return (
+          <div className="p-6">
+            <h2 className="text-2xl font-bold mb-6">Search</h2>
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search for movies, TV shows..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full p-4 pl-12 pr-4 border rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                />
+                <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
+              </div>
+              {searchQuery && (
+                <div className="mt-4 text-center text-gray-500">
+                  Searching for "{searchQuery}"...
+                </div>
+              )}
+            </div>
+            
+            <div className="text-center text-gray-500">
+              {!searchQuery && "Enter a search term to find movies and TV shows."}
+            </div>
+          </div>
+        );
+
       case "settings":
         return (
           <div className="w-full h-full">
@@ -438,8 +467,8 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
 
   return (
     <div className="flex h-screen w-full bg-gray-100">
-      {/* Sidebar */}
-      <aside className="w-20 bg-white shadow-md flex flex-col items-center justify-center py-4">
+      {/* Sidebar - Fixed position */}
+      <aside className="fixed w-20 bg-white shadow-md flex flex-col items-center justify-center py-4 h-full z-10">
         <nav className="flex flex-col space-y-6">
           <button
             className={`p-3 rounded-full ${
@@ -467,11 +496,11 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
           </button>
           <button
             className={`p-3 rounded-full ${
-              activeTab === "downloads" ? "bg-indigo-600 text-white" : "text-gray-800"
+              activeTab === "search" ? "bg-indigo-600 text-white" : "text-gray-800"
             }`}
-            onClick={() => setActiveTab("downloads")}
+            onClick={() => setActiveTab("search")}
           >
-            <FaDownload size={24} />
+            <FaSearch size={24} />
           </button>
           <button
             className={`p-3 rounded-full ${
@@ -484,8 +513,8 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
         </nav>
       </aside>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      {/* Main Content - Add margin-left to account for fixed sidebar */}
+      <div className="flex-1 flex flex-col ml-20">
         {/* Content */}
         <main className="flex-1 p-6 overflow-y-auto">
           {renderTabContent()}
