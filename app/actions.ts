@@ -13,35 +13,33 @@ export async function getMovies(pageNumber: number) {
 }
 
 export async function searchMovies(query: string) {
-    'use server';
+  'use server';
+  
+  try {
+    const response = await fetch(
+      `https://api.themoviedb.org/3/search/multi?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(query)}&language=en-US&page=1&include_adult=false`, 
+      { next: { revalidate: 60 } }
+    );
     
-    try {
-        // Using the existing pattern, fetch from TMDB without exposing the API key
-        const response = await fetch(
-            `https://api.themoviedb.org/3/search/multi?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(query)}&language=en-US&page=1&include_adult=false`, 
-            { next: { revalidate: 60 } }
-        );
-        
-        if (!response.ok) {
-            throw new Error(`Failed to fetch search results: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        
-        // Filter to only include movies and TV shows
-        const filteredResults = data.results.filter(
-            (item: any) => (item.media_type === 'movie' || item.media_type === 'tv')
-        );
-        
-        return {
-            results: filteredResults,
-            total_results: filteredResults.length,
-            total_pages: data.total_pages
-        };
-    } catch (error) {
-        console.error('Error in searchMovies action:', error);
-        throw error;
+    if (!response.ok) {
+      throw new Error(`Search failed with status: ${response.status}`);
     }
+    
+    const data = await response.json();
+    
+    // Filter results to only include movies and TV shows with posters
+    const filteredResults = data.results.filter(
+      (item: any) => (item.media_type === 'movie' || item.media_type === 'tv') && item.poster_path
+    );
+    
+    return {
+      results: filteredResults,
+      total_results: filteredResults.length
+    };
+  } catch (error) {
+    console.error('Error in searchMovies action:', error);
+    return { results: [], total_results: 0 };
+  }
 }
 
 // Function to sign up the user to the Firestore database

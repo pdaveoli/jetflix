@@ -81,9 +81,10 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
       setIsSearching(true);
       try {
         const results = await searchMoviesWrapper(searchQuery);
-        setSearchResults(results.results || []);
+        setSearchResults(results?.results || []);
       } catch (error) {
         console.error('Search error:', error);
+        setSearchResults([]);
       } finally {
         setIsSearching(false);
       }
@@ -467,28 +468,57 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
               </div>
             )}
 
-            {!isSearching && searchResults.length === 0 && searchQuery && (
-              <div className="text-center text-gray-500">
-                No results found for "{searchQuery}"
-              </div>
-            )}
-
-            {!isSearching && searchResults.length > 0 && (
+            {!isSearching && searchResults?.length > 0 && (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {searchResults.map((result) => (
-                  <div key={result.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
-                    <img
-                      src={
-                        "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
-                        result.poster_path
-                      }
-                      alt={result.title}
-                      className="w-full object-cover"
-                    />
-                    <div className="p-4">
-                      <h3 className="text-lg font-semibold">{result.title}</h3>
-                    </div>
-                  </div>
+                  <Drawer key={result.id}>
+                    <DrawerTrigger asChild>
+                      <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
+                        <img
+                          src={
+                            result.poster_path
+                              ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + result.poster_path
+                              : "/placeholder-poster.png"
+                          }
+                          alt={result.title || result.name}
+                          className="w-full object-cover"
+                        />
+                        <div className="p-4">
+                          <h3 className="text-lg font-semibold">{result.title || result.name}</h3>
+                          <p className="text-sm text-gray-500">
+                            {result.media_type === 'tv' ? 'TV Series' : 'Movie'} • 
+                            {result.release_date 
+                              ? getYearFromDate(result.release_date) 
+                              : result.first_air_date 
+                                ? getYearFromDate(result.first_air_date)
+                                : ""}
+                          </p>
+                          <div
+                            className="flex justify-between mt-2"
+                            onClick={handleLikeClick}
+                          >
+                            <Button
+                              variant="ghost"
+                              className="text-green-500 hover:text-green-700"
+                            >
+                              <FaThumbsUp size={20} />
+                            </Button>
+                            <Button
+                              variant="ghost"
+                              className="text-red-500 hover:text-red-700"
+                            >
+                              <FaThumbsDown size={20} />
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </DrawerTrigger>
+                    
+                    {/* Add the DrawerContent similar to the films case */}
+                    <DrawerContent className="p-0">
+                      {/* Content similar to films drawer */}
+                    </DrawerContent>
+                  </Drawer>
                 ))}
               </div>
             )}
