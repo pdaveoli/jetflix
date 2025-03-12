@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { UserProfile } from "@clerk/nextjs";
 import {
   FaHome,
@@ -35,6 +35,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { Button } from "./ui/button";
+import { searchMoviesWrapper } from "@/app/dashboard/searchMovies";
 
 const abbreviateNumber = (num: number, round: boolean): string => {
   if (num >= 1000000) {
@@ -62,10 +63,41 @@ interface DashboardProps {
 export default function Dashboard({ films, pageNumber }: DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
 
   const handleLikeClick = (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent drawer from opening
   };
+
+  // Search functionality
+  useEffect(() => {
+    const doSearch = async () => {
+      if (searchQuery.trim() === '') {
+        setSearchResults([]);
+        return;
+      }
+
+      setIsSearching(true);
+      try {
+        const results = await searchMoviesWrapper(searchQuery);
+        setSearchResults(results.results || []);
+      } catch (error) {
+        console.error('Search error:', error);
+      } finally {
+        setIsSearching(false);
+      }
+    };
+
+    // Debounce search
+    const timer = setTimeout(() => {
+      if (searchQuery) {
+        doSearch();
+      }
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
 
   // Render content based on active tab
   const renderTabContent = () => {
@@ -427,16 +459,39 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                 />
                 <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
               </div>
-              {searchQuery && (
-                <div className="mt-4 text-center text-gray-500">
-                  Searching for "{searchQuery}"...
-                </div>
-              )}
             </div>
             
-            <div className="text-center text-gray-500">
-              {!searchQuery && "Enter a search term to find movies and TV shows."}
-            </div>
+            {isSearching && (
+              <div className="text-center py-8">
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-indigo-500"></div>
+              </div>
+            )}
+
+            {!isSearching && searchResults.length === 0 && searchQuery && (
+              <div className="text-center text-gray-500">
+                No results found for "{searchQuery}"
+              </div>
+            )}
+
+            {!isSearching && searchResults.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {searchResults.map((result) => (
+                  <div key={result.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
+                    <img
+                      src={
+                        "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
+                        result.poster_path
+                      }
+                      alt={result.title}
+                      className="w-full object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold">{result.title}</h3>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         );
 
