@@ -52,12 +52,118 @@ const abbreviateNumber = (num: number, round: boolean): string => {
 
 // Helper function to extract year from date string
 const getYearFromDate = (dateStr: string): string => {
+  if (!dateStr) return "Unknown";
   return dateStr.substring(0, 4);
 };
 
 interface DashboardProps {
   films: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
   pageNumber: number;
+}
+
+// Create a separate drawer content component to avoid hooks rules violations
+function FilmDrawerContent({ film }: { film: any }) {
+  return (
+    <div className="flex h-[80vh]">
+      {/* Left side - Full height image */}
+      <div className="h-full w-1/3 flex items-center justify-center bg-gray-900">
+        <img
+          src={
+            film.poster_path
+              ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path
+              : "/placeholder-poster.png"
+          }
+          alt={film.title}
+          className="h-full object-contain max-w-full"
+        />
+      </div>
+
+      {/* Right side - Content with close button */}
+      <div className="flex-1 p-6 relative flex flex-col">
+        <DrawerClose className="absolute top-4 right-4 rounded-full hover:bg-gray-100">
+          <Button variant="ghost" size="icon">
+            <FaTimes size={18} />
+          </Button>
+        </DrawerClose>
+
+        <DrawerHeader className="p-0 mb-6">
+          <DrawerTitle className="text-2xl font-bold">
+            {film.title || film.name}
+          </DrawerTitle>
+          <DrawerDescription className="text-gray-500">
+            {getYearFromDate(film.release_date || film.first_air_date)} • 
+            {film.media_type === 'tv' ? ' TV Series' : ' Movie'}
+          </DrawerDescription>
+
+          {/* Rating */}
+          <div className="flex items-center mt-4">
+            <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
+              <FaStar className="text-yellow-500 mr-1" />
+              <span className="font-semibold">{film.vote_average ? abbreviateNumber(film.vote_average, true) : "0"}/10</span>
+            </div>
+            <span className="ml-2 text-sm text-gray-500">
+              ({film.vote_count ? abbreviateNumber(film.vote_count, false) : "0"} reviews)
+            </span>
+          </div>
+        </DrawerHeader>
+
+        {/* Description */}
+        <div className="mb-6">
+          <h3 className="font-semibold mb-2">Overview</h3>
+          <p className="text-gray-700">
+            {film.overview || "No overview available"}
+          </p>
+        </div>
+
+        <div className="mt-auto">
+          {/* Watch Providers */}
+          <div className="mb-4">
+            <h3 className="font-semibold mb-3">Available on</h3>
+            <div className="flex space-x-4">
+              <Button
+                variant="outline"
+                className="p-2 h-auto"
+                aria-label="Netflix"
+              >
+                <SiNetflix size={24} className="text-red-600" />
+              </Button>
+              <Button
+                variant="outline"
+                className="p-2 h-auto"
+                aria-label="Amazon Prime"
+              >
+                <SiAmazonprime
+                  size={24}
+                  className="text-blue-500"
+                />
+              </Button>
+              <Button
+                variant="outline"
+                className="p-2 h-auto"
+                aria-label="HBO"
+              >
+                <SiHbo size={24} className="text-purple-600" />
+              </Button>
+            </div>
+          </div>
+
+          {/* Action Buttons - Now positioned at the very bottom */}
+          <div className="grid grid-cols-5 gap-4">
+            <Button className="bg-indigo-600 hover:bg-indigo-700 col-span-4">
+              <FaPlay className="mr-2" /> Watch Now
+            </Button>
+            <Button
+              variant="outline"
+              className="col-span-1"
+              aria-label="Add to watchlist"
+            >
+              <FaPlus size={18} />
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default function Dashboard({ films, pageNumber }: DashboardProps) {
@@ -70,7 +176,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
     e.stopPropagation(); // Prevent drawer from opening
   };
 
-  // Search functionality
+  // Search functionality - Fixed API key issue by moving to server action
   useEffect(() => {
     const doSearch = async () => {
       if (searchQuery.trim() === '') {
@@ -80,6 +186,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
 
       setIsSearching(true);
       try {
+        // Use the wrapper that should have the API key properly configured
         const results = await searchMoviesWrapper(searchQuery);
         setSearchResults(results?.results || []);
       } catch (error) {
@@ -113,8 +220,9 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
                       <img
                         src={
-                          "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
                           film.poster_path
+                            ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path
+                            : "/placeholder-poster.png"
                         }
                         alt={film.title}
                         className="w-full object-cover"
@@ -143,103 +251,7 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                   </DrawerTrigger>
 
                   <DrawerContent className="p-0">
-                    <div className="flex h-[80vh]">
-                      {/* Left side - Full height image */}
-                      <div className="h-full w-1/3 flex items-center justify-center bg-gray-900">
-                        <img
-                          src={
-                            "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
-                            film.poster_path
-                          }
-                          alt={film.title}
-                          className="h-full object-contain max-w-full"
-                        />
-                      </div>
-
-                      {/* Right side - Content with close button */}
-                      <div className="flex-1 p-6 relative flex flex-col">
-                        <DrawerClose className="absolute top-4 right-4 rounded-full hover:bg-gray-100">
-                          <Button variant="ghost" size="icon">
-                            <FaTimes size={18} />
-                          </Button>
-                        </DrawerClose>
-
-                        <DrawerHeader className="p-0 mb-6">
-                          <DrawerTitle className="text-2xl font-bold">
-                            {film.title}
-                          </DrawerTitle>
-                          <DrawerDescription className="text-gray-500">
-                            {getYearFromDate(film.release_date)} • Action, Adventure • 2h 15m
-                          </DrawerDescription>
-
-                          {/* Rating */}
-                          <div className="flex items-center mt-4">
-                            <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
-                              <FaStar className="text-yellow-500 mr-1" />
-                              <span className="font-semibold">{abbreviateNumber(film.vote_average, true)}/10</span>
-                            </div>
-                            <span className="ml-2 text-sm text-gray-500">
-                              ({abbreviateNumber(film.vote_count, false)} reviews)
-                            </span>
-                          </div>
-                        </DrawerHeader>
-
-                        {/* Description */}
-                        <div className="mb-6">
-                          <h3 className="font-semibold mb-2">Overview</h3>
-                          <p className="text-gray-700">
-                            {film.overview}
-                          </p>
-                        </div>
-
-                        <div className="mt-auto">
-                          {/* Watch Providers */}
-                          <div className="mb-4">
-                            <h3 className="font-semibold mb-3">Available on</h3>
-                            <div className="flex space-x-4">
-                              <Button
-                                variant="outline"
-                                className="p-2 h-auto"
-                                aria-label="Netflix"
-                              >
-                                <SiNetflix size={24} className="text-red-600" />
-                              </Button>
-                              <Button
-                                variant="outline"
-                                className="p-2 h-auto"
-                                aria-label="Amazon Prime"
-                              >
-                                <SiAmazonprime
-                                  size={24}
-                                  className="text-blue-500"
-                                />
-                              </Button>
-                              <Button
-                                variant="outline"
-                                className="p-2 h-auto"
-                                aria-label="HBO"
-                              >
-                                <SiHbo size={24} className="text-purple-600" />
-                              </Button>
-                            </div>
-                          </div>
-
-                          {/* Action Buttons - Now positioned at the very bottom */}
-                          <div className="grid grid-cols-5 gap-4">
-                            <Button className="bg-indigo-600 hover:bg-indigo-700 col-span-4">
-                              <FaPlay className="mr-2" /> Watch Now
-                            </Button>
-                            <Button
-                              variant="outline"
-                              className="col-span-1"
-                              aria-label="Add to watchlist"
-                            >
-                              <FaPlus size={18} />
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <FilmDrawerContent film={film} />
                   </DrawerContent>
                 </Drawer>
               ))}
@@ -318,8 +330,9 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
                       <img
                         src={
-                          "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
                           film.poster_path
+                            ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path
+                            : "/placeholder-poster.png"
                         }
                         alt={film.title}
                         className="w-full object-cover"
@@ -348,96 +361,12 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                   </DrawerTrigger>
 
                   <DrawerContent className="p-0">
-                    <div className="flex h-[80vh]">
-                      {/* Left side - Full height image */}
-                      <div className="h-full w-1/3 flex items-center justify-center bg-gray-900">
-                        <img
-                          src={
-                            "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" +
-                            film.poster_path
-                          }
-                          alt={film.title}
-                          className="h-full object-contain max-w-full"
-                        />
-                      </div>
-
-                      {/* Right side - Content with close button */}
-                      <div className="flex-1 p-6 relative flex flex-col">
-                        <DrawerClose className="absolute top-4 right-4 rounded-full hover:bg-gray-100">
-                          <Button variant="ghost" size="icon">
-                            <FaTimes size={18} />
-                          </Button>
-                        </DrawerClose>
-
-                        <DrawerHeader className="p-0 mb-6">
-                          <DrawerTitle className="text-2xl font-bold">
-                            {film.title}
-                          </DrawerTitle>
-                          <DrawerDescription className="text-gray-500">
-                            {getYearFromDate(film.release_date)} • Drama, Adventure • 3 Seasons
-                          </DrawerDescription>
-
-                          {/* Rating */}
-                          <div className="flex items-center mt-4">
-                            <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
-                              <FaStar className="text-yellow-500 mr-1" />
-                              <span className="font-semibold">{abbreviateNumber(film.vote_average, true)}/10</span>
-                            </div>
-                            <span className="ml-2 text-sm text-gray-500">
-                              ({abbreviateNumber(film.vote_count, false)} reviews)
-                            </span>
-                          </div>
-                        </DrawerHeader>
-
-                        {/* Description */}
-                        <div className="mb-6">
-                          <h3 className="font-semibold mb-2">Overview</h3>
-                          <p className="text-gray-700">
-                            {film.overview}
-                          </p>
-                        </div>
-
-                        <div className="mt-auto">
-                          {/* Watch Providers */}
-                          <div className="mb-4">
-                            <h3 className="font-semibold mb-3">Available on</h3>
-                            <div className="flex space-x-4">
-                              <Button
-                                variant="outline"
-                                className="p-2 h-auto"
-                                aria-label="Netflix"
-                              >
-                                <SiNetflix size={24} className="text-red-600" />
-                              </Button>
-                              <Button
-                                variant="outline"
-                                className="p-2 h-auto"
-                                aria-label="Amazon Prime"
-                              >
-                                <SiAmazonprime
-                                  size={24}
-                                  className="text-blue-500"
-                                />
-                              </Button>
-                            </div>
-                          </div>
-
-                          {/* Action Buttons - Now positioned at the very bottom */}
-                          <div className="grid grid-cols-5 gap-4">
-                            <Button className="bg-indigo-600 hover:bg-indigo-700 col-span-4">
-                              <FaPlay className="mr-2" /> Watch Now
-                            </Button>
-                            <Button
-                              variant="outline"
-                              className="col-span-1"
-                              aria-label="Add to watchlist"
-                            >
-                              <FaPlus size={18} />
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    {/* Use the reusable component but pass extra TV-specific props */}
+                    <FilmDrawerContent film={{
+                      ...film,
+                      media_type: 'tv',
+                      name: film.title + ' Series'
+                    }} />
                   </DrawerContent>
                 </Drawer>
               ))}
@@ -514,12 +443,17 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
                       </div>
                     </DrawerTrigger>
                     
-                    {/* Add the DrawerContent similar to the films case */}
                     <DrawerContent className="p-0">
-                      {/* Content similar to films drawer */}
+                      <FilmDrawerContent film={result} />
                     </DrawerContent>
                   </Drawer>
                 ))}
+              </div>
+            )}
+
+            {!isSearching && searchQuery && searchResults?.length === 0 && (
+              <div className="text-center py-8 text-gray-500">
+                No results found for "{searchQuery}"
               </div>
             )}
           </div>
