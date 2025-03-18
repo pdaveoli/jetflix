@@ -12,8 +12,9 @@ export async function getMovies(pageNumber: number) {
   return movies;
 }
 
+
+
 export async function searchMovies(query: string) {
-  'use server';
   
   try {
     const response = await fetch(
