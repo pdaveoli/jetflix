@@ -1,5 +1,11 @@
 "use client";
 
+// For server actions:
+import { likeMovie, unlikeMovie } from '@/app/server-actions';
+
+// For client-side functions:
+import { searchMovies } from '@/app/actions';
+
 import { useState, useEffect } from "react";
 import { UserProfile } from "@clerk/nextjs";
 import {

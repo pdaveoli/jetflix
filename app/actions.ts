@@ -19,12 +19,8 @@ export async function getWatchProviders(movieId: number) {
 }
 
 export async function searchMovies(query: string) {
-  
-  
-
   try {
     const data = await tmdb.search.multi({ query });
-    
     
     // Filter results to only include movies and TV shows with posters
     const filteredResults = data.results.filter(
