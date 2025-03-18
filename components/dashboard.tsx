@@ -59,6 +59,8 @@ const getYearFromDate = (dateStr: string): string => {
 interface DashboardProps {
   films: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
   pageNumber: number;
+  recommendations?: Array<{ title: string; year: string; reason: string }>;
+  likedMovies?: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
 }
 
 // Create a separate drawer content component to avoid hooks rules violations
@@ -166,7 +168,7 @@ function FilmDrawerContent({ film }: { film: any }) {
   );
 }
 
-export default function Dashboard({ films, pageNumber }: DashboardProps) {
+export default function Dashboard({ films, pageNumber, recommendations = [], likedMovies = [] }: DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<any[]>([]);
@@ -536,7 +538,41 @@ export default function Dashboard({ films, pageNumber }: DashboardProps) {
       <div className="flex-1 flex flex-col ml-20">
         {/* Content */}
         <main className="flex-1 p-6 overflow-y-auto">
-          {renderTabContent()}
+          <div className="container mx-auto px-4 py-8">
+            {/* Recommendations Section */}
+            {recommendations.length > 0 && (
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold mb-4">Recommended For You</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {recommendations.map((rec, index) => (
+                    <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                      <div className="p-4">
+                        <h3 className="text-xl font-semibold">{rec.title}</h3>
+                        <p className="text-sm text-gray-400">{rec.year}</p>
+                        <p className="mt-2 text-sm">{rec.reason}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Liked Movies Section */}
+            {likedMovies.length > 0 && (
+              <section className="mb-10">
+                <h2 className="text-2xl font-bold mb-4">Movies You've Liked</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {/* Display liked movies here */}
+                </div>
+              </section>
+            )}
+
+            {/* All Movies Section */}
+            <section>
+              <h2 className="text-2xl font-bold mb-4">Browse Movies</h2>
+              {renderTabContent()}
+            </section>
+          </div>
         </main>
       </div>
     </div>
