@@ -15,7 +15,8 @@ import {
   FaPlus,
   FaTimes,
 } from "react-icons/fa";
-import { SiNetflix, SiAmazonprime, SiHbo } from "react-icons/si";
+import { SiNetflix, SiAmazonprime } from "react-icons/si";
+import { TbBrandDisney } from "react-icons/tb";
 import {
   Drawer,
   DrawerClose,
@@ -36,6 +37,7 @@ import {
 } from "@/components/ui/pagination";
 import { Button } from "./ui/button";
 import { searchMoviesWrapper } from "@/app/dashboard/searchMovies";
+import { watchProvidersWrapper } from "@/app/dashboard/getWatchProviders";
 
 const abbreviateNumber = (num: number, round: boolean): string => {
   if (num >= 1000000) {
@@ -65,6 +67,26 @@ interface DashboardProps {
 
 // Create a separate drawer content component to avoid hooks rules violations
 function FilmDrawerContent({ film }: { film: any }) {
+  const [watchProviders, setWatchProviders] = useState<any>(null);
+  const [isLoadingProviders, setIsLoadingProviders] = useState(true);
+  
+  // Fetch watch providers using useEffect
+  useEffect(() => {
+    async function fetchWatchProviders() {
+      try {
+        const providers = await watchProvidersWrapper(film.id);
+        setWatchProviders(providers);
+      } catch (error) {
+        console.error("Error fetching watch providers:", error);
+      } finally {
+        setIsLoadingProviders(false);
+      }
+    }
+    
+    fetchWatchProviders();
+  }, [film.id]);
+  
+
   return (
     <div className="flex h-[80vh]">
       {/* Left side - Full height image */}
@@ -121,32 +143,51 @@ function FilmDrawerContent({ film }: { film: any }) {
           {/* Watch Providers */}
           <div className="mb-4">
             <h3 className="font-semibold mb-3">Available on</h3>
-            <div className="flex space-x-4">
-              <Button
-                variant="outline"
-                className="p-2 h-auto"
-                aria-label="Netflix"
-              >
-                <SiNetflix size={24} className="text-red-600" />
-              </Button>
-              <Button
-                variant="outline"
-                className="p-2 h-auto"
-                aria-label="Amazon Prime"
-              >
-                <SiAmazonprime
-                  size={24}
-                  className="text-blue-500"
-                />
-              </Button>
-              <Button
-                variant="outline"
-                className="p-2 h-auto"
-                aria-label="HBO"
-              >
-                <SiHbo size={24} className="text-purple-600" />
-              </Button>
-            </div>
+            {isLoadingProviders ? (
+              <div className="flex items-center space-x-2">
+                <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+                <span className="text-sm text-gray-500">Loading providers...</span>
+              </div>
+            ) : (
+              <div className="flex space-x-4">
+                {watchProviders && watchProviders.flatrateProviders && 
+                 watchProviders.flatrateProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Netflix").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Netflix"
+                  >
+                    <SiNetflix size={24} className="text-red-600" />
+                  </Button>
+                )}
+                {watchProviders && watchProviders.flatrateProviders &&
+                  watchProviders.flatrateProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Disney Plus").length > 0 && (
+                    <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Disney Plus"
+                  >
+                    <TbBrandDisney  size={24} className="text-blue-800" />
+                  </Button>
+                  )
+                  
+                  }
+                {watchProviders && watchProviders.buyProviders && 
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Amazon Video").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Amazon Prime"
+                  >
+                    <SiAmazonprime size={24} className="text-blue-500" />
+                  </Button>
+                )}
+                
+                {watchProviders && ((!watchProviders.flatrateProviders || watchProviders.flatrateProviders.length === 0)) && (
+                  <span className="text-sm text-gray-500">No streaming providers available</span>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Action Buttons - Now positioned at the very bottom */}

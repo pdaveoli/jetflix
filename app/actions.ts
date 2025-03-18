@@ -13,7 +13,10 @@ export async function getMovies(pageNumber: number) {
   return movies;
 }
 
-
+export async function getWatchProviders(movieId: number) {
+  const watchProviders = await tmdb.movies.watchProviders(movieId);
+  return watchProviders.results.GB;
+}
 
 export async function searchMovies(query: string) {
   
@@ -21,7 +24,6 @@ export async function searchMovies(query: string) {
 
   try {
     const data = await tmdb.search.multi({ query });
-    
     
     
     // Filter results to only include movies and TV shows with posters
