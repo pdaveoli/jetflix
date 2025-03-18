@@ -12,20 +12,16 @@ export async function getMovies(pageNumber: number) {
   return movies;
 }
 
+
+
 export async function searchMovies(query: string) {
-  'use server';
   
+  
+
   try {
-    const response = await fetch(
-      `https://api.themoviedb.org/3/search/multi?api_key=${process.env.TMDB_API_KEY}&query=${encodeURIComponent(query)}&language=en-US&page=1&include_adult=false`, 
-      { next: { revalidate: 60 } }
-    );
+    const data = await tmdb.search.multi({ query });
     
-    if (!response.ok) {
-      throw new Error(`Search failed with status: ${response.status}`);
-    }
     
-    const data = await response.json();
     
     // Filter results to only include movies and TV shows with posters
     const filteredResults = data.results.filter(
