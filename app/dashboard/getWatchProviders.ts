@@ -9,7 +9,8 @@ export async function watchProvidersWrapper(id: number) {
         const buyProviders = watchproviders.buy;
         const flatrateProviders = watchproviders.flatrate;
 
-        return { rentProviders, buyProviders, flatrateProviders };
+
+        return { rentProviders: rentProviders, buyProviders: buyProviders, flatrateProviders: flatrateProviders };
 
     } catch {
         console.error('Error getting watch providers');
