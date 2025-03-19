@@ -1,8 +1,8 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { unlikeMovieServer } from '@/app/server-api';
 
 export async function POST(
-  request: Request,
+  request: NextRequest,
   { params }: { params: { movieId: string } }
 ) {
   try {
