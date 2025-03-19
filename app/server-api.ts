@@ -2,8 +2,41 @@
 
 import { cookies } from 'next/headers';
 import { getOrCreateGuestSession, LIKED_MOVIES_COOKIE } from '@/lib/tmdb-service';
+import { TMDB } from 'tmdb-ts';
 
-export async function likeMovie(movieId: number) {
+const tmdb = new TMDB(process.env.TMDB_API_KEY || ''); 
+
+// Server-only actions
+export async function getMoviesServer(pageNumber: number) {
+  const movies = await tmdb.trending.trending("movie", "week", {page: pageNumber});
+  return movies;
+}
+
+export async function getWatchProvidersServer(movieId: number) {
+  const watchProviders = await tmdb.movies.watchProviders(movieId);
+  return watchProviders.results.GB;
+}
+
+export async function searchMoviesServer(query: string) {
+  try {
+    const data = await tmdb.search.multi({ query });
+    
+    // Filter results to only include movies and TV shows with posters
+    const filteredResults = data.results.filter(
+      (item: any) => (item.media_type === 'movie' || item.media_type === 'tv') && item.poster_path
+    );
+    
+    return {
+      results: filteredResults,
+      total_results: filteredResults.length
+    };
+  } catch (error) {
+    console.error('Error in searchMovies action:', error);
+    return { results: [], total_results: 0 };
+  }
+}
+
+export async function likeMovieServer(movieId: number) {
   const sessionId = await getOrCreateGuestSession();
   if (!sessionId) {
     console.error('No session ID available - cannot like movie');
@@ -43,7 +76,7 @@ export async function likeMovie(movieId: number) {
   }
 }
 
-export async function unlikeMovie(movieId: number) {
+export async function unlikeMovieServer(movieId: number) {
   const sessionId = await getOrCreateGuestSession();
   if (!sessionId) {
     console.error('No session ID available - cannot unlike movie');
@@ -79,7 +112,7 @@ export async function unlikeMovie(movieId: number) {
   }
 }
 
-export async function getLikedMovies() {
+export async function getLikedMoviesServer() {
   const cookieStore = await cookies();
   const likedMoviesIds = JSON.parse(cookieStore.get(LIKED_MOVIES_COOKIE)?.value || '[]');
   
@@ -103,4 +136,4 @@ export async function getLikedMovies() {
     console.error('Error fetching liked movies:', error);
     return { results: [] };
   }
-}
+} 

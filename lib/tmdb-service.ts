@@ -6,6 +6,12 @@ const GUEST_SESSION_COOKIE = 'tmdb_guest_session';
 export const LIKED_MOVIES_COOKIE = 'tmdb_liked_movies';
 
 export async function getOrCreateGuestSession() {
+  // Check if API key is configured
+  if (!TMDB_API_KEY) {
+    console.error('TMDB API key is not configured');
+    return null;
+  }
+
   const cookieStore = await cookies();
   const sessionId = cookieStore.get(GUEST_SESSION_COOKIE)?.value;
   

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { likeMovie, unlikeMovie } from '@/app/server-actions';
+import { likeMovie, unlikeMovie } from '@/app/actions';
 
 // Define Movie interface
 interface Movie {

@@ -1,11 +1,11 @@
-// Create this file first
+"use client";
 
-// Import the server action
+// Import the client-side action
 import { searchMovies } from "../actions";
 import { useState } from 'react';
 
 /**
- * Wrapper function for the searchMovies server action
+ * Wrapper function for the searchMovies client action
  * @param query The search query string
  * @returns Search results or empty array on error
  */
