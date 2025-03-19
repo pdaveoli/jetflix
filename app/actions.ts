@@ -40,8 +40,12 @@ export async function searchMovies(query: string) {
 // These call the server actions from server-api.ts
 export async function likeMovie(movieId: number) {
   try {
-    const response = await fetch(`/api/movies/${movieId}/like`, {
+    const response = await fetch(`/api/like`, {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ movieId }),
     });
     return await response.json();
   } catch (error) {
@@ -52,8 +56,12 @@ export async function likeMovie(movieId: number) {
 
 export async function unlikeMovie(movieId: number) {
   try {
-    const response = await fetch(`/api/movies/${movieId}/unlike`, {
+    const response = await fetch(`/api/unlike`, {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ movieId }),
     });
     return await response.json();
   } catch (error) {
@@ -64,7 +72,7 @@ export async function unlikeMovie(movieId: number) {
 
 export async function getLikedMovies() {
   try {
-    const response = await fetch('/api/movies/liked');
+    const response = await fetch('/api/liked-movies');
     return await response.json();
   } catch (error) {
     console.error('Error fetching liked movies:', error);
