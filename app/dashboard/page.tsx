@@ -5,9 +5,11 @@ import { getRecommendations } from "@/lib/gemini-service";
 export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams: { page: string }
+  searchParams: Promise<{ page?: string }>
 }) {
-  const pageParam = searchParams.page;
+  // Await the searchParams before accessing its properties
+  const params = await searchParams;
+  const pageParam = params.page;
   const pageNumber = pageParam ? parseInt(pageParam, 10) : 1;
   
   // Fetch movies

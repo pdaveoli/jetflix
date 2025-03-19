@@ -3,10 +3,10 @@ import { unlikeMovieServer } from '@/app/server-api';
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { movieId: string } }
+  context: { params: { movieId: string } }
 ) {
   try {
-    const movieId = parseInt(params.movieId, 10);
+    const movieId = parseInt(context.params.movieId, 10);
     if (isNaN(movieId)) {
       return NextResponse.json({ success: false, error: 'Invalid movie ID' }, { status: 400 });
     }
