@@ -15,7 +15,7 @@ import {
   FaPlus,
   FaTimes,
 } from "react-icons/fa";
-import { SiNetflix, SiAmazonprime } from "react-icons/si";
+import { SiNetflix, SiAmazonprime, SiYoutube, SiAppletv, SiSky } from "react-icons/si";
 import { TbBrandDisney } from "react-icons/tb";
 import {
   Drawer,
@@ -183,6 +183,37 @@ function FilmDrawerContent({ film }: { film: any }) {
                   </Button>
                 )}
                 
+                {watchProviders && watchProviders.buyProviders &&
+                watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "YouTube").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="YouTube"
+                  >
+                    <SiYoutube size={24} className="text-red-500" />
+                    </Button>
+                )}
+                {watchProviders && watchProviders.buyProviders && 
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Apple TV").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Apple TV"
+                  >
+                    <SiAppletv size={24} className="text-blue-500" />
+                  </Button>
+                 )}
+                 {watchProviders && watchProviders.buyProviders &&
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Sky TV").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Sky TV"
+                  >
+                    <SiSky size={24} className="text-blue-500" />
+                  </Button>
+                 )}
+
                 {watchProviders && ((!watchProviders.flatrateProviders || watchProviders.flatrateProviders.length === 0)) && (
                   <span className="text-sm text-gray-500">No streaming providers available</span>
                 )}
