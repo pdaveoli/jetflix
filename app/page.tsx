@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button";
 import { SignUpButton } from "@clerk/nextjs";
 import { Footer } from "@/components/footer";
 
-const geistSans = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
-const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const handleExploreFeaturesClick = () => {
@@ -19,7 +18,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className={`min-h-screen bg-white ${inter.className}`}>
       <section className="py-24 text-center bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

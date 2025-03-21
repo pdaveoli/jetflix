@@ -4,7 +4,26 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 export async function getRecommendations(likedMovies: any[]) {
   if (!process.env.GEMINI_API_KEY) {
     console.error('Missing Gemini API key');
-    return { recommendations: [] };
+    // Return fallback recommendations if API key is missing
+    return { 
+      recommendations: [
+        {
+          title: "Inception",
+          year: "2010",
+          reason: "Fallback recommendation (Gemini API key not configured)"
+        },
+        {
+          title: "The Dark Knight",
+          year: "2008",
+          reason: "Fallback recommendation (Gemini API key not configured)"
+        },
+        {
+          title: "Interstellar",
+          year: "2014",
+          reason: "Fallback recommendation (Gemini API key not configured)"
+        }
+      ] 
+    };
   }
   
   if (likedMovies.length === 0) {

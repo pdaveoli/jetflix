@@ -1,5 +1,8 @@
 "use client";
 
+// Import client-side actions
+import { likeMovie, unlikeMovie, searchMovies } from '@/app/actions';
+
 import { useState, useEffect } from "react";
 import { UserProfile } from "@clerk/nextjs";
 import {

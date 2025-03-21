@@ -8,15 +8,12 @@ import {
 } from "@clerk/nextjs";
 import "./globals.css";
 import Script from "next/script";
-import { Metadata } from "next";
-import localFont from "next/font/local";
 import Image from "next/image";
 import { AuthButtons } from "@/components/auth-buttons";
 import { Inter } from "next/font/google";
-import { metadata } from "./metadata";
 
-const geistSans = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
-const geistMono = Inter({ subsets: ["latin"], variable: "--font-geist-sans" });
+// Correctly initialize the Inter font
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -24,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-screen`}>
+    <html lang="en" className={inter.className}>
       <ClerkProvider
         appearance={{
           variables: { colorPrimary: "#2563eb" },
@@ -48,7 +45,7 @@ export default function RootLayout({
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
                   <Image
-                    src={"@/public/logo.png"}
+                    src="/logo.PNG"
                     alt="Jetflix"
                     width={40}
                     height={40}
