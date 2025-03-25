@@ -41,6 +41,7 @@ import {
 import { Button } from "./ui/button";
 import { searchMoviesWrapper } from "@/app/dashboard/searchMovies";
 import { watchProvidersWrapper } from "@/app/dashboard/getWatchProviders";
+import { TV } from 'tmdb-ts';
 
 const abbreviateNumber = (num: number, round: boolean): string => {
   if (num >= 1000000) {
@@ -63,6 +64,7 @@ const getYearFromDate = (dateStr: string): string => {
 
 interface DashboardProps {
   films: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
+  shows: TV[];
   pageNumber: number;
   recommendations?: Array<{ title: string; year: string; reason: string }>;
   likedMovies?: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
@@ -243,7 +245,7 @@ function FilmDrawerContent({ film }: { film: any }) {
   );
 }
 
-export default function Dashboard({ films, pageNumber, recommendations = [], likedMovies = [] }: DashboardProps) {
+export default function Dashboard({ films, shows, pageNumber, recommendations = [], likedMovies = [] }: DashboardProps) {
   const [activeTab, setActiveTab] = useState("films");
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<any[]>([]);
@@ -401,21 +403,21 @@ export default function Dashboard({ films, pageNumber, recommendations = [], lik
         return (
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {films.map((film) => (
-                <Drawer key={film.id}>
+              {shows.map((show) => (
+                <Drawer key={show.id}>
                   <DrawerTrigger asChild>
                     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 cursor-pointer">
                       <img
                         src={
-                          film.poster_path
-                            ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + film.poster_path
+                          show.poster_path
+                            ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + show.poster_path
                             : "/placeholder-poster.png"
                         }
-                        alt={film.title}
+                        alt={show.name}
                         className="w-full object-cover"
                       />
                       <div className="p-4">
-                        <h3 className="text-lg font-semibold">{film.title} Series</h3>
+                        <h3 className="text-lg font-semibold">{show.name}</h3>
                         <div
                           className="flex justify-between mt-2"
                           onClick={handleLikeClick}
@@ -440,13 +442,73 @@ export default function Dashboard({ films, pageNumber, recommendations = [], lik
                   <DrawerContent className="p-0">
                     {/* Use the reusable component but pass extra TV-specific props */}
                     <FilmDrawerContent film={{
-                      ...film,
+                      ...show,
                       media_type: 'tv',
-                      name: film.title + ' Series'
+                      name: show.name
                     }} />
                   </DrawerContent>
                 </Drawer>
               ))}
+              {/* Pagination */}
+            {pageNumber === 1 ? (
+              <Pagination className="mt-8">
+                <PaginationContent>
+                  <PaginationItem>
+                    <PaginationPrevious href="#" />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href={"?page=" + pageNumber} isActive>
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                      {pageNumber + 1}
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href={"?page=" + (pageNumber + 2)}>
+                      {pageNumber + 2}
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationEllipsis />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationNext href={"?page=" + (pageNumber + 1)} />
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
+            ) : (
+              <Pagination className="mt-8">
+                <PaginationContent>
+                  <PaginationItem>
+                    <PaginationPrevious href={"?page=" + (pageNumber - 1)} />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href={"?page=" + (pageNumber-1)}>
+                      {pageNumber - 1}
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href={"?page=" + pageNumber} isActive>
+                      {pageNumber}
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                      {pageNumber + 1}
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationEllipsis />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationNext href={"?page=" + (pageNumber + 1)} />
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
+            )}
             </div>
           </>
         );

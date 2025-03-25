@@ -12,6 +12,11 @@ export async function getMovies(pageNumber: number) {
   return movies;
 }
 
+export async function getShows(pageNumber: number) {
+  const shows = await tmdb.trending.trending("tv", "week", {page: pageNumber});
+  return shows;
+}
+
 export async function getWatchProviders(movieId: number) {
   const watchProviders = await tmdb.movies.watchProviders(movieId);
   return watchProviders.results.GB;
