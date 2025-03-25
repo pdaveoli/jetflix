@@ -1,7 +1,6 @@
 import Dashboard from "@/components/dashboard";
-import { getMoviesServer, getLikedMoviesServer } from "@/app/server-api";
+import { getMoviesServer, getLikedMoviesServer, getShowsServer } from "@/app/server-api";
 import { getRecommendations } from "@/lib/gemini-service";
-import { fetchShows } from "./getShows";
 
 export default async function DashboardPage({
   searchParams,
@@ -15,7 +14,7 @@ export default async function DashboardPage({
   
   // Fetch movies
   const moviesData = await getMoviesServer(pageNumber);
-  const showsData = await fetchShows(pageNumber);
+  const showsData = await getShowsServer(pageNumber);
   // Get liked movies and recommendations
   const likedMoviesData = await getLikedMoviesServer();
   let recommendations = { recommendations: [] };
@@ -25,11 +24,11 @@ export default async function DashboardPage({
   }
   
   const films = moviesData.results;
-
+  const shows = showsData.results;
   return (
     <Dashboard 
       films={films}
-      shows={showsData}
+      shows={shows}
       pageNumber={pageNumber} 
       recommendations={recommendations.recommendations}
       likedMovies={likedMoviesData.results} 
