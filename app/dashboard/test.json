@@ -1,2857 +1,1505 @@
 {
-  "id": 277834,
+  "id": 383679,
   "results": {
     "AD": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=AD",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AD",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "AE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=AE",
-      "rent": [
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AE",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "buy": [
+      ]
+    },
+    "AG": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AG",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "AL": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=AL",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AL",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "AO": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AO",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 4
         }
       ]
     },
     "AR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=AR",
-      "buy": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 4
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "AT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=AT",
-      "rent": [
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/f195E2gXoZBp7QjGNL4XICXxiDk.jpg",
-          "provider_id": 1856,
-          "provider_name": "Magenta TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 12
-        },
-        {
-          "logo_path": "/cBN4jd4wPq6on0kESiTlevqvlnL.jpg",
-          "provider_id": 20,
-          "provider_name": "maxdome Store",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 20
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AT",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 12
-        },
-        {
-          "logo_path": "/cBN4jd4wPq6on0kESiTlevqvlnL.jpg",
-          "provider_id": 20,
-          "provider_name": "maxdome Store",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 20
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "AU": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=AU",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 10
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 12
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 13
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 21
-        },
-        {
-          "logo_path": "/9B7l9ZSos54kFrZbliVExt2z9C9.jpg",
-          "provider_id": 436,
-          "provider_name": "Fetch TV",
-          "display_priority": 31
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AU",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 50
+        }
+      ]
+    },
+    "AZ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AZ",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 2
         }
       ]
     },
     "BA": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=BA",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BA",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "BB": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BB",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "BE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=BE",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 10
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 47
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 10
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 47
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "BG": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=BG",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BG",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 16
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "buy": [
+      ]
+    },
+    "BH": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BH",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "BM": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BM",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "BO": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=BO",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BO",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "BR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=BR",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 43
+        }
+      ]
+    },
+    "BS": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BS",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 0
+        }
+      ]
+    },
+    "BY": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BY",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 5
         }
       ]
     },
     "BZ": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=BZ",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BZ",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 7
         }
       ]
     },
     "CA": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CA",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CA",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         },
         {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/d1mUAhpJpxy0YMjwVOZ4lxAAbeT.jpg",
-          "provider_id": 140,
-          "provider_name": "Cineplex",
-          "display_priority": 19
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 23
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 37
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 59
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/d1mUAhpJpxy0YMjwVOZ4lxAAbeT.jpg",
-          "provider_id": 140,
-          "provider_name": "Cineplex",
-          "display_priority": 19
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 23
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 37
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 59
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 109
         }
       ]
     },
     "CH": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CH",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CH",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
-        },
-        {
-          "logo_path": "/l5SFTF3l9l1KSgZJM7foAppUenz.jpg",
-          "provider_id": 622,
-          "provider_name": "UPC TV",
-          "display_priority": 34
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "buy": [
+      ]
+    },
+    "CI": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CI",
+      "flatrate": [
         {
-          "logo_path": "/47klot430ytIqldQUUx2avN45Sr.jpg",
-          "provider_id": 150,
-          "provider_name": "blue TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 15
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/47klot430ytIqldQUUx2avN45Sr.jpg",
-          "provider_id": 150,
-          "provider_name": "blue TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 15
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "CL": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CL",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CL",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 2
         }
-      ],
-      "buy": [
+      ]
+    },
+    "CM": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CM",
+      "flatrate": [
         {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 4
         }
       ]
     },
     "CO": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CO",
-      "buy": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 3
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CO",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 2
         }
       ]
     },
     "CR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CR",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "CU": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CU",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "CV": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CV",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "CY": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CY",
-      "buy": [
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CY",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 7
         }
       ]
     },
     "CZ": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=CZ",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 32
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CZ",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 32
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "DE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=DE",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 12
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/cBN4jd4wPq6on0kESiTlevqvlnL.jpg",
-          "provider_id": 20,
-          "provider_name": "maxdome Store",
-          "display_priority": 18
-        },
-        {
-          "logo_path": "/lrEigPPAhggq02q53uM8vdWAIUX.jpg",
-          "provider_id": 178,
-          "provider_name": "MagentaTV",
-          "display_priority": 24
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 32
-        },
-        {
-          "logo_path": "/dKh2TJ9lTWV0UIcDQGMnMyQ8AIN.jpg",
-          "provider_id": 1993,
-          "provider_name": "Videoload",
-          "display_priority": 143
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         },
         {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 12
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/cBN4jd4wPq6on0kESiTlevqvlnL.jpg",
-          "provider_id": 20,
-          "provider_name": "maxdome Store",
-          "display_priority": 18
-        },
-        {
-          "logo_path": "/lrEigPPAhggq02q53uM8vdWAIUX.jpg",
-          "provider_id": 178,
-          "provider_name": "MagentaTV",
-          "display_priority": 24
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 32
-        },
-        {
-          "logo_path": "/dKh2TJ9lTWV0UIcDQGMnMyQ8AIN.jpg",
-          "provider_id": 1993,
-          "provider_name": "Videoload",
-          "display_priority": 143
-        },
-        {
-          "logo_path": "/xo4zowa5gbKT4z65ZathH6H4Cdg.jpg",
-          "provider_id": 2209,
-          "provider_name": "Freenet meinVOD",
-          "display_priority": 171
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 101
         }
       ]
     },
     "DK": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=DK",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DK",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/auWzottqpExOHUlJwDZ4DvdHGoL.jpg",
-          "provider_id": 423,
-          "provider_name": "Blockbuster",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 17
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/auWzottqpExOHUlJwDZ4DvdHGoL.jpg",
-          "provider_id": 423,
-          "provider_name": "Blockbuster",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 17
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "DO": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=DO",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DO",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 23
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "DZ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DZ",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "EC": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=EC",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=EC",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 9
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "EE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=EE",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/1y6ds7KDN5Q33Jb0ZxnroEJ58Gd.jpg",
-          "provider_id": 373,
-          "provider_name": "Go3",
-          "display_priority": 8
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=EE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 22
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "EG": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=EG",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=EG",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 44
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "ES": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=ES",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 18
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 35
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 18
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 35
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ES",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 61
         }
       ]
     },
     "FI": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=FI",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 13
-        },
-        {
-          "logo_path": "/auWzottqpExOHUlJwDZ4DvdHGoL.jpg",
-          "provider_id": 423,
-          "provider_name": "Blockbuster",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/eglAxQEXSO13p6gNf3HKymrIu7y.jpg",
-          "provider_id": 540,
-          "provider_name": "Elisa Viihde",
-          "display_priority": 20
-        },
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 35
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=FI",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
-      ],
-      "rent": [
+      ]
+    },
+    "FJ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=FJ",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 13
-        },
-        {
-          "logo_path": "/auWzottqpExOHUlJwDZ4DvdHGoL.jpg",
-          "provider_id": 423,
-          "provider_name": "Blockbuster",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/eglAxQEXSO13p6gNf3HKymrIu7y.jpg",
-          "provider_id": 540,
-          "provider_name": "Elisa Viihde",
-          "display_priority": 20
-        },
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 35
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "FR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=FR",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=FR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         },
         {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/9Fyo6njYvroAIxAzTBbLgnjgYga.jpg",
-          "provider_id": 61,
-          "provider_name": "Orange VOD",
-          "display_priority": 11
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 20
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 40
-        },
-        {
-          "logo_path": "/cAUTwxqoI7zc9XtYr1SMtWZEsXg.jpg",
-          "provider_id": 58,
-          "provider_name": "Canal VOD",
-          "display_priority": 113
-        },
-        {
-          "logo_path": "/PAaj5bekwbeeoRC1evWg4KJW8p.jpg",
-          "provider_id": 2286,
-          "provider_name": "VIVA by videofutur",
-          "display_priority": 120
-        },
-        {
-          "logo_path": "/rdMFjYYE0uZ55rBdlX149gRF1XQ.jpg",
-          "provider_id": 2307,
-          "provider_name": "Premiere Max",
-          "display_priority": 123
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/9Fyo6njYvroAIxAzTBbLgnjgYga.jpg",
-          "provider_id": 61,
-          "provider_name": "Orange VOD",
-          "display_priority": 11
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 20
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 40
-        },
-        {
-          "logo_path": "/cAUTwxqoI7zc9XtYr1SMtWZEsXg.jpg",
-          "provider_id": 58,
-          "provider_name": "Canal VOD",
-          "display_priority": 113
-        },
-        {
-          "logo_path": "/PAaj5bekwbeeoRC1evWg4KJW8p.jpg",
-          "provider_id": 2286,
-          "provider_name": "VIVA by videofutur",
-          "display_priority": 120
-        },
-        {
-          "logo_path": "/rdMFjYYE0uZ55rBdlX149gRF1XQ.jpg",
-          "provider_id": 2307,
-          "provider_name": "Premiere Max",
-          "display_priority": 123
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 72
         }
       ]
     },
     "GB": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=GB",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 18
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 23
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GB",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 96
         }
-      ],
-      "rent": [
+      ]
+    },
+    "GF": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GF",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "GG": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GG",
+      "flatrate": [
         {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 5
-        },
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "GH": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GH",
+      "flatrate": [
         {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 7
-        },
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "GI": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GI",
+      "flatrate": [
         {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 15
-        },
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "GQ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GQ",
+      "flatrate": [
         {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 18
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 23
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "GR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=GR",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 3
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 19
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "GT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=GT",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GT",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "HK": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=HK",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HK",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 31
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "HN": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=HN",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HN",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "HR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=HR",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 29
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "HU": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=HU",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HU",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 4
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 4
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "ID": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=ID",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ID",
       "flatrate": [
         {
-          "logo_path": "/5B0WB5ohGxRtON8qCuCkGgGCO18.jpg",
-          "provider_id": 122,
-          "provider_name": "Hotstar",
-          "display_priority": 3
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "IE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=IE",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 11
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 44
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
-          "provider_id": 130,
-          "provider_name": "Sky Store",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 11
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 44
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "IL": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=IL",
-      "buy": [
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IL",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 23
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "IN": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=IN",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 11
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 11
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 41
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IN",
       "flatrate": [
         {
-          "logo_path": "/8b7I3EzWGQqi0Y1sJBmvQPf58Yd.jpg",
-          "provider_id": 2336,
-          "provider_name": "JioHotstar",
-          "display_priority": 5
-        },
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "IQ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IQ",
+      "flatrate": [
         {
-          "logo_path": "/1tCAM3WVOl0xknuwVc0v1LBWZNV.jpg",
-          "provider_id": 614,
-          "provider_name": "VI movies and tv",
-          "display_priority": 38
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "IS": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=IS",
-      "buy": [
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 24
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 24
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IS",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "IT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=IT",
-      "rent": [
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/6FDKQWcR6JfmRKLqezSsvGgRuUY.jpg",
-          "provider_id": 109,
-          "provider_name": "Timvision",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 37
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IT",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         },
         {
-          "logo_path": "/6FDKQWcR6JfmRKLqezSsvGgRuUY.jpg",
-          "provider_id": 109,
-          "provider_name": "Timvision",
-          "display_priority": 15
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 3
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/6FDKQWcR6JfmRKLqezSsvGgRuUY.jpg",
-          "provider_id": 109,
-          "provider_name": "Timvision",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 23
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 37
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 62
         }
       ]
     },
     "JM": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=JM",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=JM",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 25
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "JO": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=JO",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "JP": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=JP",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=JP",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 3
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 26
         }
-      ],
-      "rent": [
+      ]
+    },
+    "KE": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=KE",
+      "flatrate": [
         {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "KR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=KR",
-      "buy": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 6
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=KR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 27
+        }
+      ]
+    },
+    "KW": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=KW",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "LB": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LB",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "LC": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=LC",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LC",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 13
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "LI": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=LI",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LI",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 24
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "LT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=LT",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LT",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 23
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/1y6ds7KDN5Q33Jb0ZxnroEJ58Gd.jpg",
-          "provider_id": 373,
-          "provider_name": "Go3",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/7QzLA6rsML2rKxhuagWlDl7Zxlm.jpg",
-          "provider_id": 553,
-          "provider_name": "Telia Play",
-          "display_priority": 13
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "LU": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=LU",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LU",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 3
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 0
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 1
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 2
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 0
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 1
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 8
         }
       ]
     },
     "LV": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=LV",
-      "rent": [
-        {
-          "logo_path": "/1y6ds7KDN5Q33Jb0ZxnroEJ58Gd.jpg",
-          "provider_id": 373,
-          "provider_name": "Go3",
-          "display_priority": 8
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LV",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 22
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        }
-      ]
-    },
-    "ME": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=ME",
-      "flatrate": [
-        {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
-        }
-      ]
-    },
-    "MK": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=MK",
-      "flatrate": [
-        {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
-        }
-      ]
-    },
-    "MT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=MT",
-      "flatrate": [
-        {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
-        }
-      ]
-    },
-    "MX": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=MX",
-      "flatrate": [
-        {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 0
         }
       ]
     },
-    "MY": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=MY",
+    "LY": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LY",
       "flatrate": [
         {
-          "logo_path": "/5B0WB5ohGxRtON8qCuCkGgGCO18.jpg",
-          "provider_id": 122,
-          "provider_name": "Hotstar",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "MA": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MA",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "MC": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MC",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "MD": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MD",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "ME": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ME",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 4
+        }
+      ]
+    },
+    "MG": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MG",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 4
+        }
+      ]
+    },
+    "MK": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MK",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "ML": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ML",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 5
+        }
+      ]
+    },
+    "MT": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MT",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "MU": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MU",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "MX": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MX",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 8
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 45
+        }
+      ]
+    },
+    "MY": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MY",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
+        }
+      ]
+    },
+    "MZ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MZ",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "NE": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NE",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "NG": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NG",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 0
         }
       ]
     },
     "NI": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=NI",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NI",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 11
         }
       ]
     },
     "NL": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=NL",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NL",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        },
-        {
-          "logo_path": "/nzjqsR28PVVp5GJAlHtbBArNKqN.jpg",
-          "provider_id": 563,
-          "provider_name": "KPN",
-          "display_priority": 31
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/lnOkJKyFl87mzqNebAbE8ADdHoB.jpg",
-          "provider_id": 71,
-          "provider_name": "Pathé Thuis",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 13
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/651I5dLHpxDUePZcNkYTDcARTeE.jpg",
-          "provider_id": 697,
-          "provider_name": "meJane",
-          "display_priority": 42
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/lnOkJKyFl87mzqNebAbE8ADdHoB.jpg",
-          "provider_id": 71,
-          "provider_name": "Pathé Thuis",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 13
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 36
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "NO": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=NO",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NO",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/auWzottqpExOHUlJwDZ4DvdHGoL.jpg",
-          "provider_id": 423,
-          "provider_name": "Blockbuster",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/tpfmd22xEapb1aW2gzjSM5104rx.jpg",
-          "provider_id": 431,
-          "provider_name": "TV 2 Play",
-          "display_priority": 18
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 14
-        },
-        {
-          "logo_path": "/auWzottqpExOHUlJwDZ4DvdHGoL.jpg",
-          "provider_id": 423,
-          "provider_name": "Blockbuster",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/tpfmd22xEapb1aW2gzjSM5104rx.jpg",
-          "provider_id": 431,
-          "provider_name": "TV 2 Play",
-          "display_priority": 18
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "NZ": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=NZ",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NZ",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
+        }
+      ]
+    },
+    "OM": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=OM",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 0
         }
-      ],
-      "buy": [
+      ]
+    },
+    "PA": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PA",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 9
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "PE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=PE",
-      "buy": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 4
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
+        }
+      ]
+    },
+    "PF": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PF",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 0
         }
       ]
     },
     "PH": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=PH",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PH",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 28
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "PK": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PK",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "PL": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=PL",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 28
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 35
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PL",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        },
-        {
-          "logo_path": "/jhMNVBV2UocEGepRkr9oFPD7Gpb.jpg",
-          "provider_id": 505,
-          "provider_name": "Player",
-          "display_priority": 11
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
-      ],
-      "buy": [
+      ]
+    },
+    "PS": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PS",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 28
-        },
-        {
-          "logo_path": "/mBliLuM0AbkRPGDoVa7IGxwC59b.jpg",
-          "provider_id": 2102,
-          "provider_name": "Premiery Canal+",
-          "display_priority": 34
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 35
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "PT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=PT",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 8
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PT",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 7
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 8
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "PY": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=PY",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PY",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "QA": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=QA",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "RO": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=RO",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=RO",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "RS": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=RS",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=RS",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
-        }
-      ]
-    },
-    "RU": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=RU",
-      "buy": [
-        {
-          "logo_path": "/51wuCkUdkEQTUtB8TrtZzzxp3Tj.jpg",
-          "provider_id": 117,
-          "provider_name": "Kinopoisk",
-          "display_priority": 21
-        }
-      ],
-      "flatrate": [
-        {
-          "logo_path": "/51wuCkUdkEQTUtB8TrtZzzxp3Tj.jpg",
-          "provider_id": 117,
-          "provider_name": "Kinopoisk",
-          "display_priority": 21
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "SA": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SA",
-      "buy": [
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SA",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "rent": [
+      ]
+    },
+    "SC": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SC",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "SE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SE",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 41
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        },
-        {
-          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
-          "provider_id": 76,
-          "provider_name": "Viaplay",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 9
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 15
-        },
-        {
-          "logo_path": "/sNmIwrniZZORvNJOmEuWGhwBJNf.jpg",
-          "provider_id": 426,
-          "provider_name": "SF Anytime",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 41
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "SG": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SG",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SG",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "SI": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SI",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 24
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SI",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 7
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 24
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "SK": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SK",
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SK",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 4
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
         }
       ]
     },
     "SM": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SM",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SM",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 24
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "SN": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SN",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "SV": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=SV",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SV",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 26
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "TC": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TC",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "TH": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=TH",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TH",
       "flatrate": [
         {
-          "logo_path": "/5B0WB5ohGxRtON8qCuCkGgGCO18.jpg",
-          "provider_id": 122,
-          "provider_name": "Hotstar",
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 1
+        }
+      ]
+    },
+    "TN": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TN",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
           "display_priority": 0
         }
       ]
     },
     "TR": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=TR",
-      "buy": [
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 7
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 7
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TR",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 0
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 2
         }
       ]
     },
     "TT": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=TT",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TT",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 14
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "TW": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=TW",
-      "buy": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        }
-      ],
-      "rent": [
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TW",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "TZ": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TZ",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "UA": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=UA",
-      "buy": [
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=UA",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 4
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "rent": [
+      ]
+    },
+    "UG": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=UG",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
-        },
-        {
-          "logo_path": "/bZvc9dXrXNly7cA0V4D9pR8yJwm.jpg",
-          "provider_id": 35,
-          "provider_name": "Rakuten TV",
-          "display_priority": 4
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "US": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=US",
-      "rent": [
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg",
-          "provider_id": 7,
-          "provider_name": "Fandango At Home",
-          "display_priority": 37
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 47
-        },
-        {
-          "logo_path": "/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg",
-          "provider_id": 486,
-          "provider_name": "Spectrum On Demand",
-          "display_priority": 127
-        }
-      ],
-      "buy": [
-        {
-          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
-          "provider_id": 10,
-          "provider_name": "Amazon Video",
-          "display_priority": 5
-        },
-        {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 6
-        },
-        {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 16
-        },
-        {
-          "logo_path": "/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg",
-          "provider_id": 192,
-          "provider_name": "YouTube",
-          "display_priority": 17
-        },
-        {
-          "logo_path": "/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg",
-          "provider_id": 7,
-          "provider_name": "Fandango At Home",
-          "display_priority": 37
-        },
-        {
-          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
-          "provider_id": 68,
-          "provider_name": "Microsoft Store",
-          "display_priority": 47
-        }
-      ],
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=US",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        },
+        {
+          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
+          "provider_id": 1796,
+          "provider_name": "Netflix basic with Ads",
+          "display_priority": 174
         }
       ]
     },
     "UY": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=UY",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=UY",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 26
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "VE": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=VE",
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=VE",
       "flatrate": [
         {
-          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
-          "provider_id": 337,
-          "provider_name": "Disney Plus",
-          "display_priority": 1
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "buy": [
+      ]
+    },
+    "YE": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=YE",
+      "flatrate": [
         {
-          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
-          "provider_id": 3,
-          "provider_name": "Google Play Movies",
-          "display_priority": 3
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
       ]
     },
     "ZA": {
-      "link": "https://www.themoviedb.org/movie/277834-moana/watch?locale=ZA",
-      "rent": [
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ZA",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
         }
-      ],
-      "buy": [
+      ]
+    },
+    "ZM": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ZM",
+      "flatrate": [
         {
-          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
-          "provider_id": 2,
-          "provider_name": "Apple TV",
-          "display_priority": 2
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 0
+        }
+      ]
+    },
+    "ZW": {
+      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ZW",
+      "flatrate": [
+        {
+          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
+          "provider_id": 8,
+          "provider_name": "Netflix",
+          "display_priority": 5
         }
       ]
     }

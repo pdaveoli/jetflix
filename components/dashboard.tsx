@@ -40,7 +40,7 @@ import {
 } from "@/components/ui/pagination";
 import { Button } from "./ui/button";
 import { searchMoviesWrapper } from "@/app/dashboard/searchMovies";
-import { watchProvidersWrapper } from "@/app/dashboard/getWatchProviders";
+import { watchProvidersWrapper, tvWatchProvidersWrapper } from "@/app/dashboard/getWatchProviders";
 import { TV } from 'tmdb-ts';
 
 const abbreviateNumber = (num: number, round: boolean): string => {
@@ -68,6 +68,180 @@ interface DashboardProps {
   pageNumber: number;
   recommendations?: Array<{ title: string; year: string; reason: string }>;
   likedMovies?: Array<{ id: number; title: string; overview: string; release_date: string; poster_path: string; vote_average: number; vote_count: number }>;
+}
+
+function ShowDrawerContent({ show }: { show: any }) {
+  const [watchProviders, setWatchProviders] = useState<any>(null);
+  const [isLoadingProviders, setIsLoadingProviders] = useState(true);
+  
+  // Fetch watch providers using useEffect
+  useEffect(() => {
+    async function fetchWatchProviders() {
+      try {
+        const providers = await tvWatchProvidersWrapper(show.id);
+        setWatchProviders(providers);
+      } catch (error) {
+        console.error("Error fetching watch providers:", error);
+      } finally {
+        setIsLoadingProviders(false);
+      }
+    }
+    
+    fetchWatchProviders();
+  }, [show.id]);
+  
+
+  return (
+    <div className="flex h-[80vh]">
+      {/* Left side - Full height image */}
+      <div className="h-full w-1/3 flex items-center justify-center bg-gray-900">
+        <img
+          src={
+            show.poster_path
+              ? "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/" + show.poster_path
+              : "/placeholder-poster.png"
+          }
+          alt={show.title}
+          className="h-full object-contain max-w-full"
+        />
+      </div>
+
+      {/* Right side - Content with close button */}
+      <div className="flex-1 p-6 relative flex flex-col">
+        <DrawerClose className="absolute top-4 right-4 rounded-full hover:bg-gray-100">
+          <Button variant="ghost" size="icon">
+            <FaTimes size={18} />
+          </Button>
+        </DrawerClose>
+
+        <DrawerHeader className="p-0 mb-6">
+          <DrawerTitle className="text-2xl font-bold">
+            {show.name}
+          </DrawerTitle>
+          <DrawerDescription className="text-gray-500">
+            {getYearFromDate(show.release_date || show.first_air_date)} • 
+            {show.media_type === 'tv' ? ' TV Series' : ' Movie'}
+          </DrawerDescription>
+
+          {/* Rating */}
+          <div className="flex items-center mt-4">
+            <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
+              <FaStar className="text-yellow-500 mr-1" />
+              <span className="font-semibold">{show.vote_average ? abbreviateNumber(show.vote_average, true) : "0"}/10</span>
+            </div>
+            <span className="ml-2 text-sm text-gray-500">
+              ({show.vote_count ? abbreviateNumber(show.vote_count, false) : "0"} reviews)
+            </span>
+          </div>
+        </DrawerHeader>
+
+        {/* Description */}
+        <div className="mb-6">
+          <h3 className="font-semibold mb-2">Overview</h3>
+          <p className="text-gray-700">
+            {show.overview || "No overview available"}
+          </p>
+        </div>
+
+        <div className="mt-auto">
+          {/* Watch Providers */}
+          <div className="mb-4">
+            <h3 className="font-semibold mb-3">Available on</h3>
+            {isLoadingProviders ? (
+              <div className="flex items-center space-x-2">
+                <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+                <span className="text-sm text-gray-500">Loading providers...</span>
+              </div>
+            ) : (
+              <div className="flex space-x-4">
+                {watchProviders && watchProviders.flatrateProviders && 
+                 watchProviders.flatrateProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Netflix").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Netflix"
+                  >
+                    <SiNetflix size={24} className="text-red-600" />
+                  </Button>
+                )}
+                {watchProviders && watchProviders.flatrateProviders &&
+                  watchProviders.flatrateProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Disney Plus").length > 0 && (
+                    <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Disney Plus"
+                  >
+                    <TbBrandDisney  size={24} className="text-blue-800" />
+                  </Button>
+                  )
+                  
+                  }
+                {watchProviders && watchProviders.buyProviders && 
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Amazon Video").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Amazon Prime"
+                  >
+                    <SiAmazonprime size={24} className="text-blue-500" />
+                  </Button>
+                )}
+                
+                {watchProviders && watchProviders.buyProviders &&
+                watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "YouTube").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="YouTube"
+                  >
+                    <SiYoutube size={24} className="text-red-500" />
+                    </Button>
+                )}
+                {watchProviders && watchProviders.buyProviders && 
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Apple TV").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Apple TV"
+                  >
+                    <SiAppletv size={24} className="text-blue-500" />
+                  </Button>
+                 )}
+                 {watchProviders && watchProviders.buyProviders &&
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Sky TV").length > 0 && (
+                  <Button
+                    variant="outline"
+                    className="p-2 h-auto"
+                    aria-label="Sky TV"
+                  >
+                    <SiSky size={24} className="text-blue-500" />
+                  </Button>
+                 )}
+
+                {watchProviders && ((!watchProviders.flatrateProviders || watchProviders.flatrateProviders.length === 0)) && (
+                  <span className="text-sm text-gray-500">No streaming providers available</span>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Action Buttons - Now positioned at the very bottom */}
+          <div className="grid grid-cols-5 gap-4">
+            <Button className="bg-indigo-600 hover:bg-indigo-700 col-span-4">
+              <FaPlay className="mr-2" /> Watch Now
+            </Button>
+            <Button
+              variant="outline"
+              className="col-span-1"
+              aria-label="Add to watchlist"
+            >
+              <FaPlus size={18} />
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 // Create a separate drawer content component to avoid hooks rules violations
@@ -441,7 +615,7 @@ export default function Dashboard({ films, shows, pageNumber, recommendations = 
 
                   <DrawerContent className="p-0">
                     {/* Use the reusable component but pass extra TV-specific props */}
-                    <FilmDrawerContent film={{
+                    <ShowDrawerContent show={{
                       ...show,
                       media_type: 'tv',
                       name: show.name

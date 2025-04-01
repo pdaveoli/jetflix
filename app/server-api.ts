@@ -22,6 +22,11 @@ export async function getWatchProvidersServer(movieId: number) {
   return watchProviders.results.GB;
 }
 
+export async function getTVWatchProviders(showId: number) {
+  const watchProviders = await tmdb.tvShows.watchProviders(showId);
+  return watchProviders.results.GB;
+}
+
 export async function searchMoviesServer(query: string) {
   try {
     const data = await tmdb.search.multi({ query });
