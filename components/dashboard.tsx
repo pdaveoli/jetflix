@@ -208,7 +208,7 @@ function ShowDrawerContent({ show }: { show: any }) {
                   </Button>
                  )}
                  {watchProviders && watchProviders.buyProviders &&
-                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Sky TV").length > 0 && (
+                 watchProviders.buyProviders.filter((provider: { provider_name: string }) => provider.provider_name === "Sky TV" || provider.provider_name === "Sky Go" || provider.provider_name === "Sky Store" ).length > 0 && (
                   <Button
                     variant="outline"
                     className="p-2 h-auto"

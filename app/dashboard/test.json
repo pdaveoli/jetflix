@@ -1,30 +1,8 @@
 {
-  "id": 383679,
+  "id": 79744,
   "results": {
-    "AD": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AD",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
     "AE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AE",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "AG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AG",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=AE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -35,7 +13,7 @@
       ]
     },
     "AL": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AL",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=AL",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -46,7 +24,7 @@
       ]
     },
     "AO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AO",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=AO",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -56,30 +34,97 @@
         }
       ]
     },
-    "AR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AR",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
-        }
-      ]
-    },
     "AT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AT",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=AT",
+      "buy": [
+        {
+          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+          "provider_id": 10,
+          "provider_name": "Amazon Video",
+          "display_priority": 3
+        },
+        {
+          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+          "provider_id": 3,
+          "provider_name": "Google Play Movies",
+          "display_priority": 7
+        },
+        {
+          "logo_path": "/cBN4jd4wPq6on0kESiTlevqvlnL.jpg",
+          "provider_id": 20,
+          "provider_name": "maxdome Store",
+          "display_priority": 14
+        }
+      ],
+      "free": [
+        {
+          "logo_path": "/ugus0p8BGGhE8sxhwAjJz2o8jyy.jpg",
+          "provider_id": 537,
+          "provider_name": "ZDF",
+          "display_priority": 28
+        }
+      ],
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg",
+          "provider_id": 9,
+          "provider_name": "Amazon Prime Video",
+          "display_priority": 1
+        },
+        {
+          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
+          "provider_id": 337,
+          "provider_name": "Disney Plus",
+          "display_priority": 2
+        },
+        {
+          "logo_path": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg",
+          "provider_id": 29,
+          "provider_name": "Sky Go",
+          "display_priority": 8
+        },
+        {
+          "logo_path": "/67FAj8KvIiV5iZMJuPUdMrqMftw.jpg",
+          "provider_id": 321,
+          "provider_name": "Sky X",
+          "display_priority": 19
+        },
+        {
+          "logo_path": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg",
+          "provider_id": 298,
+          "provider_name": "RTL+",
+          "display_priority": 52
+        },
+        {
+          "logo_path": "/eBXzkFEupZjKaIKY7zBUaSdCY8I.jpg",
+          "provider_id": 381,
+          "provider_name": "Canal+",
+          "display_priority": 58
+        },
+        {
+          "logo_path": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg",
+          "provider_id": 2100,
+          "provider_name": "Amazon Prime Video with Ads",
+          "display_priority": 64
         }
       ]
     },
     "AU": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AU",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=AU",
+      "ads": [
+        {
+          "logo_path": "/uU4gqmoX0koF8L5yJSlfaaFd9Tz.jpg",
+          "provider_id": 246,
+          "provider_name": "7plus",
+          "display_priority": 17
+        }
+      ],
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -93,10 +138,18 @@
           "provider_name": "Netflix basic with Ads",
           "display_priority": 50
         }
+      ],
+      "buy": [
+        {
+          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+          "provider_id": 2,
+          "provider_name": "Apple TV",
+          "display_priority": 9
+        }
       ]
     },
     "AZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=AZ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=AZ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -106,30 +159,8 @@
         }
       ]
     },
-    "BA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BA",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "BB": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BB",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
     "BE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BE",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=BE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -140,40 +171,7 @@
       ]
     },
     "BG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BG",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "BH": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BH",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "BM": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BM",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "BO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BO",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=BG",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -184,35 +182,18 @@
       ]
     },
     "BR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BR",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=BR",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
-        },
-        {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 43
-        }
-      ]
-    },
-    "BS": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BS",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/7EpFKOCMrlo3bjsyBMrec64c7Wb.jpg",
+          "provider_id": 484,
+          "provider_name": "Claro tv+",
+          "display_priority": 22
         }
       ]
     },
     "BY": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BY",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=BY",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -222,19 +203,79 @@
         }
       ]
     },
-    "BZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=BZ",
+    "CA": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CA",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 7
+          "logo_path": "/ewOptMVIYcOadMGGJz8DJueH2bH.jpg",
+          "provider_id": 230,
+          "provider_name": "Crave",
+          "display_priority": 4
+        },
+        {
+          "logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+          "provider_id": 531,
+          "provider_name": "Paramount Plus",
+          "display_priority": 11
+        },
+        {
+          "logo_path": "/hExO4PtimLIYn3kBOrzsejNv7cT.jpg",
+          "provider_id": 582,
+          "provider_name": "Paramount+ Amazon Channel",
+          "display_priority": 13
+        },
+        {
+          "logo_path": "/cQjWvOiKRPeSuWRNGegcBjyqVbR.jpg",
+          "provider_id": 469,
+          "provider_name": "Club Illico",
+          "display_priority": 54
+        },
+        {
+          "logo_path": "/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg",
+          "provider_id": 1853,
+          "provider_name": "Paramount Plus Apple TV Channel ",
+          "display_priority": 115
+        },
+        {
+          "logo_path": "/h5DcR0J2EESLitnhR8xLG1QymTE.jpg",
+          "provider_id": 2303,
+          "provider_name": "Paramount Plus Premium",
+          "display_priority": 163
+        },
+        {
+          "logo_path": "/rl6zez5rCeyelt1I46JRYk6B9Ed.jpg",
+          "provider_id": 2304,
+          "provider_name": "Paramount Plus Basic with Ads",
+          "display_priority": 164
+        }
+      ],
+      "ads": [
+        {
+          "logo_path": "/xoFyQOXR3qINRsdnCQyd7jGx8Wo.jpg",
+          "provider_id": 326,
+          "provider_name": "CTV",
+          "display_priority": 46
+        }
+      ],
+      "buy": [
+        {
+          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+          "provider_id": 2,
+          "provider_name": "Apple TV",
+          "display_priority": 6
         }
       ]
     },
-    "CA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CA",
+    "CH": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CH",
+      "buy": [
+        {
+          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+          "provider_id": 3,
+          "provider_name": "Google Play Movies",
+          "display_priority": 5
+        }
+      ],
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -243,49 +284,76 @@
           "display_priority": 0
         },
         {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 109
-        }
-      ]
-    },
-    "CH": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CH",
-      "flatrate": [
+          "logo_path": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg",
+          "provider_id": 119,
+          "provider_name": "Amazon Prime Video",
+          "display_priority": 1
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
+          "provider_id": 337,
+          "provider_name": "Disney Plus",
+          "display_priority": 2
+        },
+        {
+          "logo_path": "/ytApMa9fThUQUFTn696AeNBrB8f.jpg",
+          "provider_id": 210,
+          "provider_name": "Sky",
+          "display_priority": 7
+        },
+        {
+          "logo_path": "/eBXzkFEupZjKaIKY7zBUaSdCY8I.jpg",
+          "provider_id": 381,
+          "provider_name": "Canal+",
+          "display_priority": 39
+        }
+      ],
+      "free": [
+        {
+          "logo_path": "/ugus0p8BGGhE8sxhwAjJz2o8jyy.jpg",
+          "provider_id": 537,
+          "provider_name": "ZDF",
+          "display_priority": 25
         }
       ]
     },
     "CI": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CI",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CI",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 20
         }
       ]
     },
     "CL": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CL",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CL",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 2
+          "logo_path": "/4ABGBjAMtRrYUrr0w3QfanuiaoB.jpg",
+          "provider_id": 1889,
+          "provider_name": "Universal+ Amazon Channel",
+          "display_priority": 43
         }
       ]
     },
     "CM": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CM",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CM",
       "flatrate": [
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 0
+        },
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
@@ -295,40 +363,18 @@
       ]
     },
     "CO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CO",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CO",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 2
-        }
-      ]
-    },
-    "CR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CR",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "CU": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CU",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/4ABGBjAMtRrYUrr0w3QfanuiaoB.jpg",
+          "provider_id": 1889,
+          "provider_name": "Universal+ Amazon Channel",
+          "display_priority": 44
         }
       ]
     },
     "CV": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CV",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CV",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -339,7 +385,7 @@
       ]
     },
     "CY": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CY",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CY",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -350,18 +396,76 @@
       ]
     },
     "CZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=CZ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=CZ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
+        },
+        {
+          "logo_path": "/27yD8cEx7qC1lSzaDvFlW4avXyu.jpg",
+          "provider_id": 308,
+          "provider_name": "O2 TV",
+          "display_priority": 3
+        },
+        {
+          "logo_path": "/489t5n9o1KhH7voGNQkrXT7vBKV.jpg",
+          "provider_id": 1939,
+          "provider_name": "Lepsi TV",
+          "display_priority": 30
         }
       ]
     },
     "DE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DE",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=DE",
+      "free": [
+        {
+          "logo_path": "/ugus0p8BGGhE8sxhwAjJz2o8jyy.jpg",
+          "provider_id": 537,
+          "provider_name": "ZDF",
+          "display_priority": 52
+        }
+      ],
+      "buy": [
+        {
+          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+          "provider_id": 2,
+          "provider_name": "Apple TV",
+          "display_priority": 4
+        },
+        {
+          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+          "provider_id": 10,
+          "provider_name": "Amazon Video",
+          "display_priority": 9
+        },
+        {
+          "logo_path": "/cBN4jd4wPq6on0kESiTlevqvlnL.jpg",
+          "provider_id": 20,
+          "provider_name": "maxdome Store",
+          "display_priority": 18
+        },
+        {
+          "logo_path": "/lrEigPPAhggq02q53uM8vdWAIUX.jpg",
+          "provider_id": 178,
+          "provider_name": "MagentaTV",
+          "display_priority": 24
+        },
+        {
+          "logo_path": "/dKh2TJ9lTWV0UIcDQGMnMyQ8AIN.jpg",
+          "provider_id": 1993,
+          "provider_name": "Videoload",
+          "display_priority": 143
+        },
+        {
+          "logo_path": "/xo4zowa5gbKT4z65ZathH6H4Cdg.jpg",
+          "provider_id": 2209,
+          "provider_name": "Freenet meinVOD",
+          "display_priority": 171
+        }
+      ],
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -370,48 +474,74 @@
           "display_priority": 0
         },
         {
+          "logo_path": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg",
+          "provider_id": 9,
+          "provider_name": "Amazon Prime Video",
+          "display_priority": 1
+        },
+        {
+          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
+          "provider_id": 337,
+          "provider_name": "Disney Plus",
+          "display_priority": 2
+        },
+        {
+          "logo_path": "/9r5zFWuYnwjzO1JrNjSbLQwUc3P.jpg",
+          "provider_id": 30,
+          "provider_name": "WOW",
+          "display_priority": 5
+        },
+        {
+          "logo_path": "/jmR0t1kjzHcyV7raynzMbF87J9d.jpg",
+          "provider_id": 298,
+          "provider_name": "RTL+",
+          "display_priority": 6
+        },
+        {
+          "logo_path": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg",
+          "provider_id": 29,
+          "provider_name": "Sky Go",
+          "display_priority": 8
+        },
+        {
           "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
           "provider_id": 1796,
           "provider_name": "Netflix basic with Ads",
           "display_priority": 101
+        },
+        {
+          "logo_path": "/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg",
+          "provider_id": 2100,
+          "provider_name": "Amazon Prime Video with Ads",
+          "display_priority": 154
         }
       ]
     },
     "DK": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DK",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=DK",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
-        }
-      ]
-    },
-    "DO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DO",
-      "flatrate": [
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
+          "provider_id": 76,
+          "provider_name": "Viaplay",
+          "display_priority": 4
+        },
+        {
+          "logo_path": "/a6z85DKGuPOyTg03TlJ6ShzzFO6.jpg",
+          "provider_id": 1961,
+          "provider_name": "Allente",
+          "display_priority": 39
         }
       ]
     },
     "DZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=DZ",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "EC": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=EC",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=DZ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -422,7 +552,7 @@
       ]
     },
     "EE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=EE",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=EE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -433,7 +563,7 @@
       ]
     },
     "EG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=EG",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=EG",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -444,35 +574,47 @@
       ]
     },
     "ES": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ES",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=ES",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/jse4MOi92Jgetym7nbXFZZBI6LK.jpg",
+          "provider_id": 2241,
+          "provider_name": "Movistar Plus+",
+          "display_priority": 5
         },
         {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 61
+          "logo_path": "/f6TRLB3H4jDpFEZ0z2KWSSvu1SB.jpg",
+          "provider_id": 149,
+          "provider_name": "Movistar Plus+ Ficción Total ",
+          "display_priority": 6
+        },
+        {
+          "logo_path": "/8VhN4PeHU7yfMNoWK0DnwdS1HlS.jpg",
+          "provider_id": 1838,
+          "provider_name": "Tivify",
+          "display_priority": 66
         }
       ]
     },
     "FI": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=FI",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=FI",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
+        },
+        {
+          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
+          "provider_id": 76,
+          "provider_name": "Viaplay",
+          "display_priority": 35
         }
       ]
     },
     "FJ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=FJ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=FJ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -483,13 +625,19 @@
       ]
     },
     "FR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=FR",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=FR",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/eBXzkFEupZjKaIKY7zBUaSdCY8I.jpg",
+          "provider_id": 381,
+          "provider_name": "Canal+",
+          "display_priority": 6
         },
         {
           "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
@@ -500,35 +648,50 @@
       ]
     },
     "GB": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GB",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=GB",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg",
+          "provider_id": 29,
+          "provider_name": "Sky Go",
+          "display_priority": 11
         },
         {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 96
+          "logo_path": "/g0E9h3JAeIwmdvxlT73jiEuxdNj.jpg",
+          "provider_id": 39,
+          "provider_name": "Now TV",
+          "display_priority": 45
+        }
+      ],
+      "buy": [
+        {
+          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+          "provider_id": 2,
+          "provider_name": "Apple TV",
+          "display_priority": 4
+        },
+        {
+          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+          "provider_id": 10,
+          "provider_name": "Amazon Video",
+          "display_priority": 7
+        },
+        {
+          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
+          "provider_id": 130,
+          "provider_name": "Sky Store",
+          "display_priority": 16
+        },
+        {
+          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
+          "provider_id": 68,
+          "provider_name": "Microsoft Store",
+          "display_priority": 17
         }
       ]
     },
     "GF": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GF",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "GG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GG",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=GF",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -539,84 +702,41 @@
       ]
     },
     "GH": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GH",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=GH",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
-        }
-      ]
-    },
-    "GI": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GI",
-      "flatrate": [
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
         }
       ]
     },
     "GQ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GQ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=GQ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
-        }
-      ]
-    },
-    "GR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GR",
-      "flatrate": [
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "GT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=GT",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "HK": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HK",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
-        }
-      ]
-    },
-    "HN": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HN",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
         }
       ]
     },
     "HR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HR",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=HR",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -627,7 +747,7 @@
       ]
     },
     "HU": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=HU",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=HU",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -637,52 +757,33 @@
         }
       ]
     },
-    "ID": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ID",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
     "IE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IE",
-      "flatrate": [
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=IE",
+      "buy": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/6AKbY2ayaEuH4zKg2prqoVQ9iaY.jpg",
+          "provider_id": 130,
+          "provider_name": "Sky Store",
+          "display_priority": 9
         }
-      ]
-    },
-    "IL": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IL",
+      ],
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "IN": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IN",
-      "flatrate": [
+          "logo_path": "/kAZkQcIxMxTmlwdgSB05fqtymp0.jpg",
+          "provider_id": 29,
+          "provider_name": "Sky Go",
+          "display_priority": 8
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/g0E9h3JAeIwmdvxlT73jiEuxdNj.jpg",
+          "provider_id": 39,
+          "provider_name": "Now TV",
+          "display_priority": 10
         }
       ]
     },
     "IQ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IQ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=IQ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -693,18 +794,24 @@
       ]
     },
     "IS": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IS",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=IS",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
+          "provider_id": 76,
+          "provider_name": "Viaplay",
+          "display_priority": 24
         }
       ]
     },
     "IT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=IT",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=IT",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -720,58 +827,25 @@
         }
       ]
     },
-    "JM": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=JM",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "JO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=JO",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
     "JP": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=JP",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=JP",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg",
+          "provider_id": 15,
+          "provider_name": "Hulu",
+          "display_priority": 1
         },
         {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 26
+          "logo_path": "/a5T7vNaGvoeckYO6rQkHolvyYf4.jpg",
+          "provider_id": 84,
+          "provider_name": "U-NEXT",
+          "display_priority": 2
         }
       ]
     },
     "KE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=KE",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "KR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=KR",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=KE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -780,15 +854,26 @@
           "display_priority": 0
         },
         {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 27
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
+        }
+      ]
+    },
+    "KR": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=KR",
+      "flatrate": [
+        {
+          "logo_path": "/5gmEivxOGPdq4Afpq1f8ktLtEW1.jpg",
+          "provider_id": 97,
+          "provider_name": "Watcha",
+          "display_priority": 4
         }
       ]
     },
     "KW": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=KW",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=KW",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -799,18 +884,7 @@
       ]
     },
     "LB": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LB",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "LC": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LC",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=LB",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -821,18 +895,30 @@
       ]
     },
     "LI": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LI",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=LI",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg",
+          "provider_id": 119,
+          "provider_name": "Amazon Prime Video",
+          "display_priority": 1
+        },
+        {
+          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
+          "provider_id": 337,
+          "provider_name": "Disney Plus",
+          "display_priority": 24
         }
       ]
     },
     "LT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LT",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=LT",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -843,18 +929,30 @@
       ]
     },
     "LU": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LU",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=LU",
       "flatrate": [
+        {
+          "logo_path": "/97yvRBw1GzX7fXprcF80er19ot.jpg",
+          "provider_id": 337,
+          "provider_name": "Disney Plus",
+          "display_priority": 3
+        },
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 8
+        },
+        {
+          "logo_path": "/pvske1MyAoymrs5bguRfVqYiM9a.jpg",
+          "provider_id": 119,
+          "provider_name": "Amazon Prime Video",
+          "display_priority": 17
         }
       ]
     },
     "LV": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LV",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=LV",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -865,7 +963,7 @@
       ]
     },
     "LY": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=LY",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=LY",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -876,7 +974,7 @@
       ]
     },
     "MA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MA",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MA",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -887,7 +985,7 @@
       ]
     },
     "MC": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MC",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MC",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -898,30 +996,25 @@
       ]
     },
     "MD": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MD",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MD",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
-        }
-      ]
-    },
-    "ME": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ME",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 4
         }
       ]
     },
     "MG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MG",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MG",
       "flatrate": [
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 0
+        },
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
@@ -930,20 +1023,15 @@
         }
       ]
     },
-    "MK": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MK",
+    "ML": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=ML",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
           "display_priority": 0
-        }
-      ]
-    },
-    "ML": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ML",
-      "flatrate": [
+        },
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
@@ -952,190 +1040,169 @@
         }
       ]
     },
-    "MT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MT",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
     "MU": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MU",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MU",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 6
         }
       ]
     },
     "MX": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MX",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MX",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 8
-        },
-        {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 45
-        }
-      ]
-    },
-    "MY": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MY",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
+          "logo_path": "/4ABGBjAMtRrYUrr0w3QfanuiaoB.jpg",
+          "provider_id": 1889,
+          "provider_name": "Universal+ Amazon Channel",
+          "display_priority": 95
         }
       ]
     },
     "MZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=MZ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=MZ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
         }
       ]
     },
     "NE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NE",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=NE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 20
         }
       ]
     },
     "NG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NG",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=NG",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
-        }
-      ]
-    },
-    "NI": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NI",
-      "flatrate": [
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 11
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 22
         }
       ]
     },
     "NL": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NL",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=NL",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
+        },
+        {
+          "logo_path": "/qN7uDYanT47WI0MmbwOr5HFFot.jpg",
+          "provider_id": 72,
+          "provider_name": "Videoland",
+          "display_priority": 6
+        }
+      ],
+      "buy": [
+        {
+          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
+          "provider_id": 68,
+          "provider_name": "Microsoft Store",
+          "display_priority": 14
         }
       ]
     },
     "NO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NO",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=NO",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
+        },
+        {
+          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
+          "provider_id": 76,
+          "provider_name": "Viaplay",
+          "display_priority": 4
+        },
+        {
+          "logo_path": "/tpfmd22xEapb1aW2gzjSM5104rx.jpg",
+          "provider_id": 431,
+          "provider_name": "TV 2 Play",
+          "display_priority": 18
+        },
+        {
+          "logo_path": "/3ZigBD8WTEPcEHAvMWiJGUsv5u4.jpg",
+          "provider_id": 578,
+          "provider_name": "Strim",
+          "display_priority": 29
         }
       ]
     },
     "NZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=NZ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=NZ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
+        },
+        {
+          "logo_path": "/wbqJss5NNebssp5RBkAdxIHecv2.jpg",
+          "provider_id": 395,
+          "provider_name": "TVNZ",
+          "display_priority": 12
         }
       ]
     },
     "OM": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=OM",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=OM",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
-        }
-      ]
-    },
-    "PA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PA",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "PE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PE",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
         }
       ]
     },
     "PF": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PF",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "PH": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PH",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "PK": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PK",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=PF",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1146,51 +1213,18 @@
       ]
     },
     "PL": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PL",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=PL",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
-        }
-      ]
-    },
-    "PS": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PS",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "PT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PT",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
-        }
-      ]
-    },
-    "PY": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=PY",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
         }
       ]
     },
     "QA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=QA",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=QA",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1201,7 +1235,7 @@
       ]
     },
     "RO": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=RO",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=RO",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1211,19 +1245,19 @@
         }
       ]
     },
-    "RS": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=RS",
+    "RU": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=RU",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/51wuCkUdkEQTUtB8TrtZzzxp3Tj.jpg",
+          "provider_id": 117,
+          "provider_name": "Kinopoisk",
+          "display_priority": 21
         }
       ]
     },
     "SA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SA",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SA",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1234,40 +1268,47 @@
       ]
     },
     "SC": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SC",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SC",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 7
         }
       ]
     },
     "SE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SE",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 1
-        }
-      ]
-    },
-    "SG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SG",
-      "flatrate": [
+        },
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/bnoTnLzz2MAhK3Yc6P9KXe5drIz.jpg",
+          "provider_id": 76,
+          "provider_name": "Viaplay",
+          "display_priority": 6
+        },
+        {
+          "logo_path": "/jy4yvY3szonb0p6rtMXvF5stuX9.jpg",
+          "provider_id": 497,
+          "provider_name": "Tele2 Play",
+          "display_priority": 22
         }
       ]
     },
     "SI": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SI",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SI",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1278,7 +1319,7 @@
       ]
     },
     "SK": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SK",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SK",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1289,7 +1330,7 @@
       ]
     },
     "SM": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SM",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SM",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1300,84 +1341,35 @@
       ]
     },
     "SN": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SN",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=SN",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
         }
       ]
     },
-    "SV": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=SV",
+    "TD": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=TD",
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
           "display_priority": 0
-        }
-      ]
-    },
-    "TC": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TC",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "TH": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TH",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 1
         }
       ]
     },
     "TN": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TN",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "TR": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TR",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 2
-        }
-      ]
-    },
-    "TT": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TT",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "TW": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TW",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=TN",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1388,18 +1380,24 @@
       ]
     },
     "TZ": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=TZ",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=TZ",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 7
         }
       ]
     },
     "UA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=UA",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=UA",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1410,18 +1408,7 @@
       ]
     },
     "UG": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=UG",
-      "flatrate": [
-        {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
-        }
-      ]
-    },
-    "US": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=US",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=UG",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1430,37 +1417,78 @@
           "display_priority": 0
         },
         {
-          "logo_path": "/kICQccvOh8AIBMHGkBXJ047xeHN.jpg",
-          "provider_id": 1796,
-          "provider_name": "Netflix basic with Ads",
-          "display_priority": 174
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
         }
       ]
     },
-    "UY": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=UY",
-      "flatrate": [
+    "US": {
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=US",
+      "buy": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/seGSXajazLMCKGB5hnRCidtjay1.jpg",
+          "provider_id": 10,
+          "provider_name": "Amazon Video",
+          "display_priority": 5
+        },
+        {
+          "logo_path": "/9ghgSC0MA082EL6HLCW3GalykFD.jpg",
+          "provider_id": 2,
+          "provider_name": "Apple TV",
+          "display_priority": 6
+        },
+        {
+          "logo_path": "/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg",
+          "provider_id": 3,
+          "provider_name": "Google Play Movies",
+          "display_priority": 16
+        },
+        {
+          "logo_path": "/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg",
+          "provider_id": 7,
+          "provider_name": "Fandango At Home",
+          "display_priority": 37
+        },
+        {
+          "logo_path": "/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg",
+          "provider_id": 68,
+          "provider_name": "Microsoft Store",
+          "display_priority": 47
         }
-      ]
-    },
-    "VE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=VE",
+      ],
       "flatrate": [
         {
-          "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
-          "provider_id": 8,
-          "provider_name": "Netflix",
-          "display_priority": 0
+          "logo_path": "/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg",
+          "provider_id": 15,
+          "provider_name": "Hulu",
+          "display_priority": 7
+        },
+        {
+          "logo_path": "/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg",
+          "provider_id": 257,
+          "provider_name": "fuboTV",
+          "display_priority": 9
+        },
+        {
+          "logo_path": "/ptmbGSttkyzawLbxx9MElmxKuVo.jpg",
+          "provider_id": 2383,
+          "provider_name": "Philo",
+          "display_priority": 57
+        }
+      ],
+      "free": [
+        {
+          "logo_path": "/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg",
+          "provider_id": 486,
+          "provider_name": "Spectrum On Demand",
+          "display_priority": 128
         }
       ]
     },
     "YE": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=YE",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=YE",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
@@ -1471,30 +1499,48 @@
       ]
     },
     "ZA": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ZA",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=ZA",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 4
         }
       ]
     },
     "ZM": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ZM",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=ZM",
       "flatrate": [
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
           "provider_name": "Netflix",
           "display_priority": 0
+        },
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 8
         }
       ]
     },
     "ZW": {
-      "link": "https://www.themoviedb.org/tv/249042-adolescence/season/1/watch?locale=ZW",
+      "link": "https://www.themoviedb.org/tv/79744-the-rookie/watch?locale=ZW",
       "flatrate": [
+        {
+          "logo_path": "/ilR8XFZOr3e3wETQ4ZXLjXQXrts.jpg",
+          "provider_id": 55,
+          "provider_name": "ShowMax",
+          "display_priority": 0
+        },
         {
           "logo_path": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg",
           "provider_id": 8,
