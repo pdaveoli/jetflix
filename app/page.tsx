@@ -4,7 +4,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Faq } from "@/components/faq";
 import { Button } from "@/components/ui/button";
-import { SignUpButton } from "@clerk/nextjs";
+import { SignUpButton, useUser } from "@clerk/nextjs";
 import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,6 +16,17 @@ export default function Home() {
       featuresSection.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
+
+  // Check if the user is logged in
+  const { isSignedIn, isLoaded } = useUser();
+
+  if (isSignedIn) {
+    // Redirect to the dashboard if the user is logged in
+    window.location.href = "/dashboard";
+    return null;
+  }
+
+  if (!isLoaded) return null;
 
   return (
     <main className={`min-h-screen bg-white ${inter.className}`}>
