@@ -2,10 +2,10 @@
 - [ ] Add a mobile responsive layout
 - [ ] When play is pressed, redirects to IMDb
 - [ ] Add a watchlist with the plus feature on films/movies
-- [ ] Remove blue bars on TV series
-- [ ] Remove blue bars on films
+- [X] Remove blue bars on TV series
+- [X] Remove blue bars on films
 - [ ] On user, when going to /security, goes to a 404 as there is no /dashboard/security
 - [ ] Add a Jetflix home, with AI recommendations :D
 - [ ] Fix pagination on TV shows -> movies
 - [ ] Like / dislike feature
-- [ ] Fix logo
+- [X] Fix logo
