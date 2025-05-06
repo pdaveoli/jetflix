@@ -37,7 +37,7 @@ export default function MovieCard({ movie, isLiked = false }: { movie: Movie; is
   };
 
   return (
-    <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+    <div className="relative rounded-lg overflow-hidden shadow-lg">
       {movie.poster_path ? (
         <Image 
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -47,7 +47,7 @@ export default function MovieCard({ movie, isLiked = false }: { movie: Movie; is
           className="w-full h-auto"
         />
       ) : (
-        <div className="bg-gray-700 h-64 flex items-center justify-center">
+        <div className="h-64 flex items-center justify-center">
           <span>No image available</span>
         </div>
       )}
