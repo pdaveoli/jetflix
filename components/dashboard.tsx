@@ -365,7 +365,7 @@ function FilmDrawerContent({ film }: { film: any }) {
         window.open("https://www.netflix.com/search?q=" + urlEnding, "_blank");
         break;
       case "Disney Plus":
-        window.open("https://www.disneyplus.com/search/" + urlEnding, "_blank");
+        window.open("https://www.google.com/search?q=" + urlEnding + "+site%3Adisneyplus.com", "_blank");
         break;
       case "Amazon Video":
         window.open(
@@ -373,7 +373,7 @@ function FilmDrawerContent({ film }: { film: any }) {
           "_blank"
         );
         break;
-      case "YouTube":
+      case "Youtube":
         window.open(
           "https://www.youtube.com/handle1?search_query=" + urlEnding,
           "_blank"
