@@ -121,7 +121,7 @@ function ShowDrawerContent({ show }: { show: any }) {
   ) => {
     e.stopPropagation();
     // Handle watch provider click
-    var urlEnding = encodeURIComponent(show.title);
+    var urlEnding = encodeURIComponent(show.name);
     switch (provider) {
       case "Netflix":
         window.open("https://www.netflix.com/search?q=" + urlEnding, "_blank");
