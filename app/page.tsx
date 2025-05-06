@@ -26,7 +26,6 @@ export default function Home() {
     return null;
   }
 
-  if (!isLoaded) return null;
 
   return (
     <main className={`min-h-screen bg-white ${inter.className}`}>
