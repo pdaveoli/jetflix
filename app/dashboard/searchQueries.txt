@@ -1,0 +1,7 @@
+https://www.sky.com/search-page?q=
+https://www.netflix.com/search?q=
+https://www.hulu.com/search?q=
+https://tv.apple.com/search?term=
+https://www.disneyplus.com/search/
+https://www.amazon.co.uk/s?k=Last+Of+Us&i=instant-video
+https://www.youtube.com/handle1?search_query=SEARCH_TERM
