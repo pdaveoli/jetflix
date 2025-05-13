@@ -81,6 +81,7 @@ interface DashboardProps {
   }>;
   shows: TV[];
   pageNumber: number;
+  activeTab?: string;
   recommendations?: Array<{ title: string; year: string; reason: string }>;
   likedMovies?: Array<{
     id: number;
@@ -330,7 +331,10 @@ function ShowDrawerContent({ show }: { show: any }) {
 
           {/* Action Buttons - Now positioned at the very bottom */}
           <div className="grid grid-cols-5 gap-4">
-            <Button className="bg-indigo-600 hover:bg-indigo-700 col-span-4">
+            <Button 
+              className="bg-indigo-600 hover:bg-indigo-700 col-span-4"
+              onClick={() => window.open(`https://www.imdb.com/find/?q=${encodeURIComponent(show.name || '')}`, "_blank")}
+            >
               <FaPlay className="mr-2" /> Watch Now
             </Button>
             <Button
@@ -586,7 +590,10 @@ function FilmDrawerContent({ film }: { film: any }) {
 
           {/* Action Buttons - Now positioned at the very bottom */}
           <div className="grid grid-cols-5 gap-4">
-            <Button className="bg-indigo-600 hover:bg-indigo-700 col-span-4">
+            <Button 
+              className="bg-indigo-600 hover:bg-indigo-700 col-span-4"
+              onClick={() => window.open(`https://www.imdb.com/find/?q=${encodeURIComponent(film.title || '')}`, "_blank")}
+            >
               <FaPlay className="mr-2" /> Watch Now
             </Button>
             <Button
@@ -607,10 +614,13 @@ export default function Dashboard({
   films,
   shows,
   pageNumber,
+  activeTab: initialActiveTab = "films",
   recommendations = [],
   likedMovies = [],
 }: DashboardProps) {
-  const [activeTab, setActiveTab] = useState("films");
+  // Use a type for the activeTab to avoid type comparison issues
+  type TabType = "films" | "series" | "search" | "settings" | "home" | "downloads";
+  const [activeTab, setActiveTab] = useState<TabType>(initialActiveTab as TabType);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<any[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -681,12 +691,20 @@ export default function Dashboard({
                           <Button
                             variant="ghost"
                             className="text-green-500 hover:text-green-700"
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              await likeMovie(film.id);
+                            }}
                           >
                             <FaThumbsUp size={20} />
                           </Button>
                           <Button
                             variant="ghost"
                             className="text-red-500 hover:text-red-700"
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              await unlikeMovie(film.id);
+                            }}
                           >
                             <FaThumbsDown size={20} />
                           </Button>
@@ -710,17 +728,17 @@ export default function Dashboard({
                     <PaginationPrevious href="#" />
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href={"?page=" + pageNumber} isActive>
+                    <PaginationLink href={"?page=" + pageNumber + "&tab=films"} isActive>
                       1
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                    <PaginationLink href={"?page=" + (pageNumber + 1) + "&tab=films"}>
                       {pageNumber + 1}
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href={"?page=" + (pageNumber + 2)}>
+                    <PaginationLink href={"?page=" + (pageNumber + 2) + "&tab=films"}>
                       {pageNumber + 2}
                     </PaginationLink>
                   </PaginationItem>
@@ -728,7 +746,7 @@ export default function Dashboard({
                     <PaginationEllipsis />
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationNext href={"?page=" + (pageNumber + 1)} />
+                    <PaginationNext href={"?page=" + (pageNumber + 1) + "&tab=films"} />
                   </PaginationItem>
                 </PaginationContent>
               </Pagination>
@@ -736,20 +754,20 @@ export default function Dashboard({
               <Pagination className="mt-8">
                 <PaginationContent>
                   <PaginationItem>
-                    <PaginationPrevious href={"?page=" + (pageNumber - 1)} />
+                    <PaginationPrevious href={"?page=" + (pageNumber - 1) + "&tab=films"} />
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href={"?page=" + (pageNumber - 1)}>
+                    <PaginationLink href={"?page=" + (pageNumber - 1) + "&tab=films"}>
                       {pageNumber - 1}
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href={"?page=" + pageNumber} isActive>
+                    <PaginationLink href={"?page=" + pageNumber + "&tab=films"} isActive>
                       {pageNumber}
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                    <PaginationLink href={"?page=" + (pageNumber + 1) + "&tab=films"}>
                       {pageNumber + 1}
                     </PaginationLink>
                   </PaginationItem>
@@ -757,7 +775,7 @@ export default function Dashboard({
                     <PaginationEllipsis />
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationNext href={"?page=" + (pageNumber + 1)} />
+                    <PaginationNext href={"?page=" + (pageNumber + 1) + "&tab=films"} />
                   </PaginationItem>
                 </PaginationContent>
               </Pagination>
@@ -792,12 +810,20 @@ export default function Dashboard({
                           <Button
                             variant="ghost"
                             className="text-green-500 hover:text-green-700"
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              await likeMovie(show.id);
+                            }}
                           >
                             <FaThumbsUp size={20} />
                           </Button>
                           <Button
                             variant="ghost"
                             className="text-red-500 hover:text-red-700"
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              await unlikeMovie(show.id);
+                            }}
                           >
                             <FaThumbsDown size={20} />
                           </Button>
@@ -826,17 +852,17 @@ export default function Dashboard({
                       <PaginationPrevious href="#" />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href={"?page=" + pageNumber} isActive>
+                      <PaginationLink href={"?page=" + pageNumber + "&tab=series"} isActive>
                         1
                       </PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                      <PaginationLink href={"?page=" + (pageNumber + 1) + "&tab=series"}>
                         {pageNumber + 1}
                       </PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href={"?page=" + (pageNumber + 2)}>
+                      <PaginationLink href={"?page=" + (pageNumber + 2) + "&tab=series"}>
                         {pageNumber + 2}
                       </PaginationLink>
                     </PaginationItem>
@@ -844,7 +870,7 @@ export default function Dashboard({
                       <PaginationEllipsis />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationNext href={"?page=" + (pageNumber + 1)} />
+                      <PaginationNext href={"?page=" + (pageNumber + 1) + "&tab=series"} />
                     </PaginationItem>
                   </PaginationContent>
                 </Pagination>
@@ -852,20 +878,20 @@ export default function Dashboard({
                 <Pagination className="mt-8">
                   <PaginationContent>
                     <PaginationItem>
-                      <PaginationPrevious href={"?page=" + (pageNumber - 1)} />
+                      <PaginationPrevious href={"?page=" + (pageNumber - 1) + "&tab=series"} />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href={"?page=" + (pageNumber - 1)}>
+                      <PaginationLink href={"?page=" + (pageNumber - 1) + "&tab=series"}>
                         {pageNumber - 1}
                       </PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href={"?page=" + pageNumber} isActive>
+                      <PaginationLink href={"?page=" + pageNumber + "&tab=series"} isActive>
                         {pageNumber}
                       </PaginationLink>
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationLink href={"?page=" + (pageNumber + 1)}>
+                      <PaginationLink href={"?page=" + (pageNumber + 1) + "&tab=series"}>
                         {pageNumber + 1}
                       </PaginationLink>
                     </PaginationItem>
@@ -873,7 +899,7 @@ export default function Dashboard({
                       <PaginationEllipsis />
                     </PaginationItem>
                     <PaginationItem>
-                      <PaginationNext href={"?page=" + (pageNumber + 1)} />
+                      <PaginationNext href={"?page=" + (pageNumber + 1) + "&tab=series"} />
                     </PaginationItem>
                   </PaginationContent>
                 </Pagination>
@@ -944,12 +970,20 @@ export default function Dashboard({
                             <Button
                               variant="ghost"
                               className="text-green-500 hover:text-green-700"
+                              onClick={async (e) => {
+                                e.stopPropagation();
+                                await likeMovie(result.id);
+                              }}
                             >
                               <FaThumbsUp size={20} />
                             </Button>
                             <Button
                               variant="ghost"
                               className="text-red-500 hover:text-red-700"
+                              onClick={async (e) => {
+                                e.stopPropagation();
+                                await unlikeMovie(result.id);
+                              }}
                             >
                               <FaThumbsDown size={20} />
                             </Button>
@@ -976,15 +1010,37 @@ export default function Dashboard({
 
       case "settings":
         return (
-          <div className="w-full h-full">
-            <UserProfile
-              appearance={{
-                elements: {
-                  rootBox: "w-full mx-auto max-w-4xl",
-                  card: "rounded-xl shadow-lg border border-gray-100",
-                },
-              }}
-            />
+          <div className="w-full h-full p-6">
+            <h1 className="text-2xl font-bold mb-6">Account Settings</h1>
+            <div className="flex flex-col md:flex-row gap-6 mb-6">
+              <div className="w-full md:w-1/3">
+                <div className="bg-white rounded-lg shadow-md p-4">
+                  <h2 className="text-lg font-semibold mb-4">Settings Menu</h2>
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="/dashboard" className="block p-2 hover:bg-gray-100 rounded-lg">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/dashboard/security" className="block p-2 hover:bg-gray-100 rounded-lg text-indigo-600 font-medium">
+                        Security
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="w-full md:w-2/3">
+                <UserProfile
+                  appearance={{
+                    elements: {
+                      rootBox: "w-full",
+                      card: "rounded-xl shadow-lg border border-gray-100",
+                    },
+                  }}
+                />
+              </div>
+            </div>
           </div>
         );
 
@@ -1002,7 +1058,7 @@ export default function Dashboard({
   };
 
   return (
-    <div className="flex h-screen w-full bg-gray-100">
+    <div className="flex h-screen w-full bg-gray-100 overflow-hidden">
       {/* Sidebar - Fixed position */}
       <aside className="fixed w-20 bg-white shadow-md flex flex-col items-center justify-center py-4 h-full z-10">
         <nav className="flex flex-col space-y-6">
@@ -1060,7 +1116,7 @@ export default function Dashboard({
       </aside>
 
       {/* Main Content - Add margin-left to account for fixed sidebar */}
-      <div className="flex-1 flex flex-col ml-20">
+      <div className="flex-1 flex flex-col ml-20 overflow-hidden">
         {/* Content */}
         <main className="flex-1 p-6 overflow-y-auto">
           <div className="container mx-auto px-4 py-8">

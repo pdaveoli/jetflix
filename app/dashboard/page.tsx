@@ -5,12 +5,13 @@ import { getRecommendations } from "@/lib/gemini-service";
 export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string }>
+  searchParams: Promise<{ page?: string, tab?: string }>
 }) {
   // Await the searchParams before accessing its properties
   const params = await searchParams;
   const pageParam = params.page;
   const pageNumber = pageParam ? parseInt(pageParam, 10) : 1;
+  const tabParam = params.tab || 'films';
   
   // Fetch movies
   const moviesData = await getMoviesServer(pageNumber);
@@ -29,7 +30,8 @@ export default async function DashboardPage({
     <Dashboard 
       films={films}
       shows={shows}
-      pageNumber={pageNumber} 
+      pageNumber={pageNumber}
+      activeTab={tabParam}
       recommendations={recommendations.recommendations}
       likedMovies={likedMoviesData.results} 
     />
