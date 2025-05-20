@@ -1,2 +1,16 @@
-\
-// filepath: /workspaces/jetflix/landingpage/components/theme-provider.tsx\n\"use client\"\n\nimport * as React from \"react\"\nimport { ThemeProvider as NextThemesProvider } from \"next-themes\"\nimport { type ThemeProviderProps } from \"next-themes/dist/types\"\n\nexport function ThemeProvider({ children, ...props }: ThemeProviderProps) {\n  return <NextThemesProvider {...props}>{children}</NextThemesProvider>\n}\n
+"use client";
+
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+type Attribute = 'class' | 'data-theme' | 'data-mode';
+
+type ThemeProviderProps = {
+  children: React.ReactNode;
+  attribute?: Attribute | Attribute[];
+  defaultTheme?: string;
+  enableSystem?: boolean;
+  disableTransitionOnChange?: boolean;
+};
+
+export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+}

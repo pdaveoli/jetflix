@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -7,7 +5,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { MotionProvider } from "@/components/motion-provider";
 import { ClerkProvider, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import Script from "next/script";
 import Image from "next/image";
 import { AuthButtons } from "@/components/auth-buttons";
 
