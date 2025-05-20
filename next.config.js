@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    turbotrace: {
+      memoryLimit: 4096,
+    },
+  },
   images: {
     remotePatterns: [
       {

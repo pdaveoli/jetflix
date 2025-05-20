@@ -27,7 +27,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <MotionProvider>
-              <nav className="sticky top-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 shadow-sm">
+              <nav className="sticky top-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 z-50 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
@@ -37,8 +37,9 @@ export default function RootLayout({
                         width={40}
                         height={40}
                         className="h-10 w-10"
+                        priority
                       />
-                      <span className="text-xl font-bold text-gray-900">Jetflix</span>
+                      <span className="text-xl font-bold text-gray-900 dark:text-white">Jetflix</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <SignedOut>
