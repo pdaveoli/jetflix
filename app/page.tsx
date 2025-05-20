@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image"; // Ensure Image is imported if used, or remove if not.
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeToggle } from "@/components/theme-toggle"; // Assuming this exists in main components
 import { ChevronRight, Film, Star, TrendingUp, Play, Award, Clock } from "lucide-react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";
 
-// Animation variants
+// Animation variants (copied from the more feature-rich page.tsx)
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -87,7 +87,7 @@ export default function Home() {
   // Parallax effect for hero section
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, -100]);
-  const y2 = useTransform(scrollY, [0, 500], [0, -50]);
+  // const y2 = useTransform(scrollY, [0, 500], [0, -50]); // y2 was unused in the provided landing page code
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   // Featured movies data
@@ -156,64 +156,38 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
-      {/* Navigation */}
-      <motion.header
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="border-b border-border/40 bg-background/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50"
-      >
-        <div className="container flex items-center justify-between h-16 px-4">
-          <Link href="/" className="flex items-center gap-2">
-            <motion.div
-              whileHover={{ scale: 1.05, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative w-9 h-9 bg-gradient-to-br from-purple-600 to-blue-600 dark:from-purple-500 dark:to-blue-500 rounded-md flex items-center justify-center"
-            >
-              <Film className="w-5 h-5 text-white" />
-            </motion.div>
-            <span className="font-bold text-xl">Jetflix</span>
-          </Link>
+      {/* Navigation - This assumes your main layout.tsx handles the primary navigation.
+          If this page.tsx is meant to have its own distinct header,
+          ensure it doesn't conflict with the global nav from layout.tsx.
+          The global nav from /workspaces/jetflix/app/layout.tsx will be present.
+          If you want the landing page specific header from the original landingpage/app/page.tsx,
+          you might need to conditionally render the global nav or adjust styling.
+          For now, I'm including the header structure from the more feature-rich page.tsx
+          that was in the root /app/page.tsx previously, assuming it's the desired one.
+      */}
+      {/*
+        The global navigation is already provided by /workspaces/jetflix/app/layout.tsx.
+        If you need a different navigation for *just this page*, you'd handle it here.
+        Otherwise, remove any <header> or <nav> sections from this page.tsx
+        if they duplicate the global navigation.
 
-          <div className="flex items-center gap-3">
-            <ThemeToggle />
+        The original /workspaces/jetflix/landingpage/app/page.tsx had a simple header:
+        <header className="flex justify-between items-center mb-16">
+          <h1 className="text-4xl font-bold">Jetflix</h1>
+          <nav>
+            <ul className="flex space-x-6">
+              <li><Link href="/signin" className="hover:text-indigo-400">Sign In</Link></li>
+              <li><Link href="/signup" className="bg-indigo-600 px-4 py-2 rounded-md hover:bg-indigo-500">Sign Up</Link></li>
+            </ul>
+          </nav>
+        </header>
+        This conflicts with the global nav from layout.tsx. The global nav already has Sign In/Sign Up buttons
+        via Clerk's <SignedOut> and <SignedIn> components.
+        So, we should rely on the global navigation from layout.tsx and not include a separate header here.
+      */}
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.2 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-foreground/80 hover:text-foreground"
-                asChild
-              >
-                <Link href="/sign-in">Sign In</Link>
-              </Button>
-            </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.3 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 dark:from-purple-500 dark:to-blue-500 dark:hover:from-purple-600 dark:hover:to-blue-600 text-white"
-                asChild
-              >
-                <Link href="/sign-up">Sign Up</Link>
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </motion.header>
-
-      {/* Hero Section */}
+      {/* Hero Section from the more feature-rich page.tsx */}
       <section className="relative pt-32 pb-32 md:pt-40 md:pb-40 overflow-hidden">
         {/* Background with cosmic effect */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -329,7 +303,7 @@ export default function Home() {
         initial="hidden"
         animate={trendingInView ? "visible" : "hidden"}
         variants={fadeIn}
-        className="py-32 mt-20 relative"
+        className="py-32 mt-20 relative" // Adjusted mt-20, was py-32 before
       >
         <div className="container px-4">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -358,7 +332,7 @@ export default function Home() {
                 className="group relative rounded-xl overflow-hidden bg-card"
               >
                 <div className="aspect-[2/3] overflow-hidden">
-                  <Image
+                  <Image // Assuming Image component is available and configured
                     src={movie.image || "/placeholder.svg"}
                     alt={movie.title}
                     width={400}
@@ -489,7 +463,10 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Footer */}
+      {/* Footer - This assumes your main layout.tsx handles the primary footer or you want this specific footer.
+          The global /workspaces/jetflix/components/footer.tsx might be different.
+          Adjust if this footer is duplicative or if the global one is preferred.
+      */}
       <footer className="border-t border-border py-12">
         <div className="container px-4">
           <div className="flex flex-col md:flex-row justify-between">
