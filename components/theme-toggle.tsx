@@ -1,2 +1,28 @@
-\
-// filepath: /workspaces/jetflix/landingpage/components/theme-toggle.tsx\n\"use client\"\n\nimport * as React from \"react\"\nimport { Moon, Sun } from \"lucide-react\"\nimport { useTheme } from \"next-themes\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport function ThemeToggle() {\n  const { setTheme, theme } = useTheme()\n\n  return (\n    <Button\n      variant=\"ghost\"\n      size=\"icon\"\n      onClick={() => setTheme(theme === \"light\" ? \"dark\" : \"light\")}\n      className=\"rounded-full\"\n    >\n      <Sun className=\"h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0\" />\n      <Moon className=\"absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100\" />\n      <span className=\"sr-only\">Toggle theme</span>\n    </Button>\n  )\n}\n
+"use client";
+
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
+
+export function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Wait for component to mount to access window/localStorage
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  return (
+    <button
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      className="rounded-full p-2 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
+    >
+      {theme === "light" ? <FaMoon size={20} /> : <FaSun size={20} />}
+    </button>
+  );
+}
